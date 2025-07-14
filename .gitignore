@@ -1,0 +1,16 @@
+**/*
+
+# Formati per il c++
+!**/*.cpp
+!**/*.hpp
+!**/*.h
+!**/*.cc
+!**/*.cxx
+!**/*.hh
+!**/*.c++
+
+# File geerici
+!*/
+!**/*.md
+!**/*.pdf
+!**/*.gitignore
