@@ -1,7 +1,9 @@
 # 💻 Esercizi di Informatica - C++
 
 ![C++](https://img.shields.io/badge/language-C%2B%2B-blue)
-![IIS F.Corni](https://img.shields.io/badge/scuola-Nome--Scuola-lightgrey)
+![scuola](https://img.shields.io/badge/scuola-IIS%20F.Corni-lightgrey)
+![Talpa](https://img.shields.io/badge/Talpa-no%20status-lightgrey)
+
 
 Questa repository contiene tutti gli esercizi di informatica svolti a scuola, scritti in **C++**. Ogni file rappresenta un singolo esercizio, con codice pulito e commentato dove serve.
 
@@ -10,14 +12,20 @@ Questa repository contiene tutti gli esercizi di informatica svolti a scuola, sc
 La repo è organizzata in cartelle per argomenti o capitoli, ad esempio:
 
 ```
-/esercizi-informatica-cpp
-├── 01_input_output/
-│ ├── esercizio1.cpp
-│ └── esercizio2.cpp
-├── 02_condizioni/
-├── 03_cicli/
-├── 04_funzioni/
-├── 05_array/
+/Luppi-Informatica
+├── Compiti-2025/
+│ ├── 01.cpp
+│ ├── 02.cpp
+│ └── ...
+├── C++
+│ ├── 01 Sintassi di base/
+│ ├── 02 Algoritmi/
+│ ├── 03 Strutture dati/
+│ ├── 04 Debuging/
+│ ├── 05 Funzioni/
+│ ├── 06 File/
+│ └── ...
+├── Progetti/
 ├── ...
 └── README.md
 ```
@@ -39,6 +47,8 @@ g++ esercizio1.cpp -o esercizio1
 ```
 
 Assicurati di avere installato un compilatore compatibile con C++11 o superiore.
+
+Oppure uusa l’estensione [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) per eseguire velocemente i file `.cpp` direttamente da VS Code.
 
 ## 📌 Obiettivi
 
