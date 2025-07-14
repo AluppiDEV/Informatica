@@ -1,7 +1,7 @@
 # 💻 Esercizi di Informatica - C++
 
+![scuola](https://img.shields.io/badge/scuola-IIS%20F.Corni-red)
 ![C++](https://img.shields.io/badge/language-C%2B%2B-blue)
-![scuola](https://img.shields.io/badge/scuola-IIS%20F.Corni-lightgrey)
 ![Talpa](https://img.shields.io/badge/Talpa-no%20status-lightgrey)
 
 
