@@ -12,5 +12,6 @@
 # File geerici
 !*/
 !**/*.md
+!**/*.txt
 !**/*.pdf
 !**/*.gitignore
