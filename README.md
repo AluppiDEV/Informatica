@@ -1,9 +1,8 @@
 # 💻 Esercizi di Informatica - C++
 
-![scuola](https://img.shields.io/badge/scuola-IIS%20F.Corni-red)
-![C++](https://img.shields.io/badge/language-C%2B%2B-blue)
 ![Talpa](https://img.shields.io/badge/Talpa-no%20status-lightgrey)
-
+![scuola](https://img.shields.io/badge/scuola-IIS%20F.Corni-red)
+![language C++](https://img.shields.io/badge/language-C%2B%2B-blue) ![language Python](https://img.shields.io/badge/language-Python-yellow?logo=python)
 
 Questa repository contiene tutti gli esercizi di informatica svolti a scuola, scritti in **C++**, **Python** e altri linguaggi `(in futuro)`. Ogni file rappresenta un singolo esercizio, con codice pulito e commentato dove serve.
 
@@ -75,4 +74,5 @@ Oppure uusa l’estensione [Code Runner](https://marketplace.visualstudio.com/it
 - Suggerimenti e correzioni sono sempre ben accetti.
 
 ## 📎 Licenza
+
 Questa repository è distribuita con licenza MIT. Puoi usare liberamente il codice per scopi didattici.
