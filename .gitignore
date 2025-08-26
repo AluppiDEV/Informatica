@@ -9,6 +9,9 @@
 !**/*.hh
 !**/*.c++
 
+# Formati per il python
+!**/*.py
+
 # File geerici
 !*/
 !**/*.md
