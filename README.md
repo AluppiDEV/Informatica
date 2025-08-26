@@ -5,7 +5,7 @@
 ![Talpa](https://img.shields.io/badge/Talpa-no%20status-lightgrey)
 
 
-Questa repository contiene tutti gli esercizi di informatica svolti a scuola, scritti in **C++**. Ogni file rappresenta un singolo esercizio, con codice pulito e commentato dove serve.
+Questa repository contiene tutti gli esercizi di informatica svolti a scuola, scritti in **C++**, **Python** e altri linguaggi `(in futuro)`. Ogni file rappresenta un singolo esercizio, con codice pulito e commentato dove serve.
 
 ## 📂 Struttura
 
@@ -14,15 +14,15 @@ La repo è organizzata in cartelle per argomenti o capitoli, ad esempio:
 ```
 /Luppi-Informatica
 ├── Compiti-2025/
-│ ├── 01.cpp
-│ ├── 02.cpp
+│ ├── 1 Sequenza/
+│ ├── 2 Selezione/
 │ └── ...
 ├── C++
 │ ├── 01 Sintassi di base/
-│ ├── 02 Algoritmi/
-│ ├── 03 Strutture dati/
-│ ├── 04 Debuging/
-│ ├── 05 Funzioni/
+│ ├── 02 Array/
+│ ├── 03 Matrici/
+│ ├── 04 Funzioni/
+│ ├── 05 Strutture/
 │ ├── 06 File/
 │ └── ...
 ├── Progetti/
@@ -32,7 +32,7 @@ La repo è organizzata in cartelle per argomenti o capitoli, ad esempio:
 
 ## 🧠 Cosa troverai
 
-- Esercizi base e avanzati in C++
+- Esercizi base e avanzati nei vari linguaggi
 - Ogni esercizio ha un nome descrittivo
 - Codice formattato e leggibile
 - Spiegazioni tramite commenti quando necessario
@@ -52,7 +52,7 @@ Oppure uusa l’estensione [Code Runner](https://marketplace.visualstudio.com/it
 
 ## 📌 Obiettivi
 
-- Migliorare la pratica con il C++
+- Migliorare la pratica con la programmazione
 - Tenere traccia dei progressi
 - Ripassare facilmente prima di verifiche e interrogazioni
 - Avere una base riutilizzabile per altri progetti
@@ -65,12 +65,12 @@ Oppure uusa l’estensione [Code Runner](https://marketplace.visualstudio.com/it
 - Funzioni
 - Array e stringhe
 - Strutture (struct)
-- Ricorsione (se presente)
+- Ricorsione
 - Algoritmi base
 
 ## 🗒️ Note
 
-- Tutti i file sono scritti e testati su sistemi Linux.
+- Tutti i file sono scritti e testati su sistemi Linux/Windows.
 - Alcuni esercizi sono semplificati per chiarezza.
 - Suggerimenti e correzioni sono sempre ben accetti.
 
