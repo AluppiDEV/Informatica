@@ -12,6 +12,11 @@
 # Formati per il python
 !**/*.py
 
+# Formati per il java
+!**/*.java
+!**/*.class
+
+
 # File geerici
 !*/
 !**/*.md
