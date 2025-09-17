@@ -17,7 +17,7 @@ La repo è organizzata in cartelle per argomenti o capitoli, ad esempio:
 │ ├── 1 Sequenza/
 │ ├── 2 Selezione/
 │ └── ...
-├── C++
+├── # C++
 │ ├── 01 Sintassi di base/
 │ ├── 02 Array/
 │ ├── 03 Matrici/
@@ -25,6 +25,12 @@ La repo è organizzata in cartelle per argomenti o capitoli, ad esempio:
 │ ├── 05 Strutture/
 │ ├── 06 File/
 │ └── ...
+├── # Python
+│ └── ...
+├── # Java
+│ ├── 01 Argomento da iniziare
+│ └── ...
+├── Librerie/
 ├── Progetti/
 ├── ...
 └── README.md
@@ -41,14 +47,17 @@ La repo è organizzata in cartelle per argomenti o capitoli, ad esempio:
 
 Puoi compilare ogni file `.cpp` con un compilatore C++ standard, ad esempio `g++`:
 
-```bash
-g++ esercizio1.cpp -o esercizio1
-./esercizio1
-```
+Seguite la guida completa di [VS Code](https://code.visualstudio.com/docs/cpp/config-mingw)
 
-Assicurati di avere installato un compilatore compatibile con C++11 o superiore.
+Puoi eseguire ogni file `.py` con l'interprete Python, ad esempio `python`:
 
-Oppure uusa l’estensione [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) per eseguire velocemente i file `.cpp` direttamente da VS Code.
+Seguite la guida completa di [VS Code](https://code.visualstudio.com/docs/python/python-quick-start)
+
+Puoi compilare ogni file `.java` con un compilatore Java standard, ad esempio `javac`:
+
+Seguite la guida completa di [VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
+
+È consigliato l'utilizzo dell'estensione [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) per eseguire velocemente i file direttamente da VS Code.
 
 ## 📌 Obiettivi
 
