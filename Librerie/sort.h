@@ -1,6 +1,6 @@
 #include <iostream>
-
 using namespace std;
+
 //! Naive sort
 void naiveSort(int arr[], int dim, int *iterations = nullptr)
 {
