@@ -1,5 +1,6 @@
 #include <iostream>
 
+//! Ricerca dicotomca
 using namespace std;
 int ricerca(int arr[], int dim, int x) {
 	int start = 0, end = dim, mid = (start+end)/2;
@@ -20,6 +21,7 @@ int ricerca(int arr[], int dim, int x) {
 
 }
 
+//! Ricerca ricorsiva
 int ricercaRicorsiva(int arr[], int start, int end, int x) {
 	int mid = (start+end)/2;
 
