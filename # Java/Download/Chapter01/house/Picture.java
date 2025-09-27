@@ -19,6 +19,7 @@ public class Picture
     private Circle sun;
     private Circle moon;
     private boolean drawn;
+    private boolean drawnSunset;
 
     /**
      * Constructor for objects of class Picture
@@ -33,6 +34,7 @@ public class Picture
         sun = new Circle();
         moon = new Circle();
         drawn = false;
+        drawnSunset = false;
     }
 
     /**
@@ -143,17 +145,20 @@ public class Picture
      */
     public void drawSunset()
     {
-        for (int i=0; i<150; i++)
+        if (!drawnSunset)
         {
-            moveSun();
+            for (int i=0; i<150; i++)
+            {
+                moveSun();
+            }
+            sun.changeColor("red");
+            window.changeColor("yellow");
+            reDraw();
+            for (int i=0; i<150; i++)
+            {
+                moveMoon();
+            }
+            reDraw();
         }
-        sun.changeColor("red");
-        window.changeColor("yellow");
-        reDraw();
-        for (int i=0; i<150; i++)
-        {
-            moveMoon();
-        }
-        reDraw();
     }
 }

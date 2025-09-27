@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=TicketMachine
+comment0.text=\n\ TicketMachine\ models\ a\ ticket\ machine\ that\ issues\n\ flat-fare\ tickets.\n\ The\ price\ of\ a\ ticket\ is\ specified\ via\ the\ constructor.\n\ Instances\ will\ check\ to\ ensure\ that\ a\ user\ only\ enters\n\ sensible\ amounts\ of\ money,\ and\ will\ only\ print\ a\ ticket\n\ if\ enough\ money\ has\ been\ input.\n\ \n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling\n\ @version\ 7.1\n
+comment1.params=cost
+comment1.target=TicketMachine(int)
+comment1.text=\n\ Create\ a\ machine\ that\ issues\ tickets\ of\ the\ given\ price.\n
+comment2.params=
+comment2.target=int\ getPrice()
+comment2.text=\n\ @Return\ The\ price\ of\ a\ ticket.\n
+comment3.params=
+comment3.target=int\ getBalance()
+comment3.text=\n\ Return\ The\ amount\ of\ money\ already\ inserted\ for\ the\ next\ ticket.\n
+comment4.params=amount
+comment4.target=void\ insertMoney(int)
+comment4.text=\n\ Receive\ an\ amount\ of\ money\ from\ a\ customer.\n\ Check\ that\ the\ amount\ is\ sensible.\n
+comment5.params=
+comment5.target=void\ printTicket()
+comment5.text=\n\ Print\ a\ ticket\ if\ enough\ money\ has\ been\ inserted,\ and\n\ reduce\ the\ current\ balance\ by\ the\ ticket\ price.\ Print\n\ an\ error\ message\ if\ more\ money\ is\ required.\n
+comment6.params=
+comment6.target=int\ refundBalance()
+comment6.text=\n\ Return\ the\ money\ in\ the\ balance.\n\ The\ balance\ is\ cleared.\n
+numComments=7
