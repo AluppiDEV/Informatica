@@ -25,7 +25,14 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        price = cost;
+        if (cost >= 0) 
+        {
+            price = cost;
+        }
+        else
+        {
+            price = 1;
+        }
         balance = 0;
         total = 0;
     }
@@ -36,6 +43,22 @@ public class TicketMachine
     public int getPrice()
     {
         return price;
+    }
+
+    /**
+     * Update the price of a ticket.
+     */
+    public void newPrice(int cost)
+    {
+        price = cost;
+    }
+
+    /**
+     * Update the price of a ticket.
+     */
+    public void showPrce()
+    {
+        System.out.println("The actual price of a ticket is " + getPrice() + " cents.");
     }
 
     /**
@@ -77,23 +100,37 @@ public class TicketMachine
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# " + getPrice() + " cents.");
             System.out.println("##################");
+            if (balance - 5 > 0) 
+            {    
+                System.out.println("# Your rest is " + (balance - 5) + " cents");
+                System.out.println("##################");
+            }
             System.out.println();
     
             // Update the total collected with the balance.
             total = total + 5;
             // Clear the balance.
-            balance = balance - 5;
+            balance = 0;
         }
         else
         {
-            System.out.println("##################");
+            System.out.println("#######################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Add more money");
-            System.out.println("# the cost is " + price + " cents.");
-            System.out.println("##################");
+            System.out.println("# the cost is " + getPrice() + " cents.");
+            System.out.println("#######################");
             System.out.println();
         }
+    }
+
+    /**
+     * Print the instructon for the user 
+     */
+    public void prompt()
+    {
+        System.out.println("You have to insert 5 cents to print a ticket");
+        System.out.println("You already have " + getBalance() + " cents");
     }
 }
