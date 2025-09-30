@@ -15,11 +15,37 @@ public class NumberDisplay {
         value = 0;
     }
 
+    /**
+     * Metodo getter
+     */
     public int getValue() {
         return value;
     }
 
+    /**
+     * Metodo setter
+     */
     public void setValue(int NewValue) {
-        NewValue = value;
+        if (NewValue >= 0 && NewValue < limit) {
+            this.value = NewValue;
+        }
+    }
+
+    /**
+     * Visualizza il valore del attuale del numero
+     */
+    public String getDisplayValue() {
+        if (value < 10) {
+            return "0" + value;
+        } else {
+            return "" + value;
+        }
+    }
+
+    /**
+     * Incrementa il valore del contatore
+     */
+    public void increment() {
+        value = (value+1) % limit;
     }
 }
