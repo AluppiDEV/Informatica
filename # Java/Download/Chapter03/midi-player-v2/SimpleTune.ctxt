@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=SimpleTune
+comment0.text=\n\ Model\ a\ simple\ tune\ as\ a\ sequence\ of\ notes\ played\n\ on\ a\ particular\ instrument.\n\ \n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling\n\ @version\ 7.0\n
+comment1.params=
+comment1.target=SimpleTune()
+comment1.text=\n\ Support\ the\ creation\ of\ a\ simple\ tune.\n
+comment2.params=noteName\ duration
+comment2.target=void\ addNote(java.lang.String,\ int)
+comment2.text=\n\ Add\ a\ note\ to\ the\ tune.\n\ @param\ noteName\ The\ name\ of\ the\ note;\ e.g.,\ "C",\ "C\#",\ "E5",\ etc.\n\ @param\ duration\ The\ length\ of\ time\ the\ note\ should\ be\ played\ for.\n
+comment3.params=
+comment3.target=void\ showNotes()
+comment3.text=\n\ List\ the\ notes\ and\ durations\ of\ the\ tune.\n
+comment4.params=
+comment4.target=void\ clear()
+comment4.text=\n\ Discard\ all\ of\ the\ notes.\n
+comment5.params=
+comment5.target=int\ getInstrument()
+comment5.text=\n\ Get\ the\ instrument\ to\ be\ used\ with\ the\ tune.\n\ @return\ The\ instrument.\n
+comment6.params=instrument
+comment6.target=void\ setInstrument(int)
+comment6.text=\n\ Set\ the\ instrument\ to\ be\ used.\n\ @param\ instrument\ A\ positive\ value\ within\ the\ range\ of\ available\ instruments.\n
+comment7.params=
+comment7.target=java.util.ArrayList\ getNotes()
+comment7.text=\n\ Get\ the\ notes\ of\ the\ tune.\n\ @return\ The\ notes.\n
+numComments=8

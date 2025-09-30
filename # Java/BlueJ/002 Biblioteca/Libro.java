@@ -5,14 +5,14 @@
  * @author Luppi
  * @version 29/09/2025
  * 
- * Attributi: titolo, autore, pagine, ISBN, inPrestito
+ *          Attributi: titolo, autore, pagine, ISBN, inPrestito
  *
- * Definire il costruttore, i setter e i getter.
+ *          Definire il costruttore, i setter e i getter.
  *
- * Definire i metodi: stampaAutore, stampaTitolo, stampaDettagli, prendiPrestito
+ *          Definire i metodi: stampaAutore, stampaTitolo, stampaDettagli,
+ *          prendiPrestito
  */
-public class Libro 
-{
+public class Libro {
     // Titolo del libro
     private String title;
     // Autore del libro
@@ -27,85 +27,78 @@ public class Libro
     /**
      * Costruttore degli oggetti di classe Libro
      */
-    public Libro(String titolo, String autore, int pagine, int codice) 
-    {
-        title = titolo;
-        author = autore;
-        pages = pagine;
-        ISBN = codice;
+    public Libro(String title, String author, int pages, int ISBN) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.ISBN = ISBN;
         loan = false;
-
     }
 
     /**
      * Metodi getter
      */
-    public String getTitle()
-    {
+    public String getTitle() {
         return title;
     }
-    public String getAuthor()
-    {
+
+    public String getAuthor() {
         return author;
     }
-    public int getPages()
-    {
+
+    public int getPages() {
         return pages;
     }
-    public int getISBN()
-    {
+
+    public int getISBN() {
         return ISBN;
     }
-    public boolean getLoan()
-    {
+
+    public boolean getLoan() {
         return loan;
     }
 
     /**
      * Metodi setter
      */
-    public void setTitle(String title)
-    {
-        title = this.title;
+    public void setTitle(String title) {
+        this.title = title;
     }
-    public void setAuthor(String author)
-    {
-        author = this.author;
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
-    public void setPages(int pages)
-    {
-        pages = this.pages;
+
+    public void setPages(int pages) {
+        this.pages = pages;
     }
-    public void setISBN(int ISBN)
-    {
-        ISBN = this.ISBN;
+
+    public void setISBN(int ISBN) {
+        this.ISBN = ISBN;
     }
-    public void setLoan(boolean loan)
-    {
-        loan = this.loan;
+
+    public void setLoan(boolean loan) {
+        this.loan = loan;
     }
 
     /**
      * Metodo per visulizzare l'autore del libro
      */
-    public void stampaAutore()
-    {
+    public void stampaAutore() {
         System.out.println("l'autore del libro è: " + getAuthor() + ".");
     }
 
     /**
      * Metodo per visualizzare il titolo del libro
      */
-    public void stampaTitolo()
-    {
+    public void stampaTitolo() {
         System.out.println("Il titolo del libro è: " + getTitle() + ".");
     }
 
     /**
      * Metodo per visualizzare i dettagli del libro
      */
-    public void stampaDettagli()
-    {
+    public void stampaDettagli() {
         System.out.println("##############################");
         System.out.println("# Il libro ha : " + getPages() + " pagine.");
         System.out.println("# Il codice ISBN del libro è : " + getISBN() + ".");
@@ -116,16 +109,12 @@ public class Libro
     /**
      * Metodo per prendere in prestito o restituire il libro
      */
-    public void prendiPrestito()
-    {
+    public void prendiPrestito() {
         System.out.println("#######################################");
-        if (!getLoan())
-        {
+        if (!getLoan()) {
             setLoan(!loan);
             System.out.println("# Libro preso in prestito correttamente");
-        }
-        else
-        {
+        } else {
             System.out.println("# Libro attualmente in prestito");
         }
         System.out.println("#######################################");
@@ -134,16 +123,12 @@ public class Libro
     /**
      * Metodo per restituire un libro preso in prestito
      */
-    public void restituisciPrestito()
-    {
+    public void restituisciPrestito() {
         System.out.println("################################");
-        if (getLoan())
-        {
+        if (getLoan()) {
             setLoan(!loan);
             System.out.println("# Libro restituito correttamente");
-        }
-        else
-        {
+        } else {
             System.out.println("# Libro non in prestito");
         }
         System.out.println("################################");

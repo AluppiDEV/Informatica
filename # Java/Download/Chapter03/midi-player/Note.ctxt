@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Note
+comment0.text=\n\ Simple\ representation\ of\ MIDI\ note\ within\ a\ tune,\n\ including\ its\ playing\ duration.\n\ A\ default\ duration\ of\ 8\ ticks\ is\ used\ if\ not\n\ otherwise\ specified.\n\ \n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling\n\ @version\ 7.0\n
+comment1.params=noteName
+comment1.target=Note(java.lang.String)
+comment1.text=\n\ Create\ a\ note\ with\ the\ default\ duration.\n\ @param\ noteName\ The\ name\ of\ the\ note.\n
+comment2.params=noteName\ duration
+comment2.target=Note(java.lang.String,\ int)
+comment2.text=\n\ Create\ a\ note\ with\ the\ given\ duration.\n\ @param\ noteName\ The\ name\ of\ the\ note.\n\ @param\ duration\ How\ long\ the\ note\ should\ last.\n
+comment3.params=
+comment3.target=java.lang.String\ getNoteName()
+comment3.text=\n\ Get\ the\ name\ of\ the\ note.\n\ @return\ The\ note's\ name.\n
+comment4.params=
+comment4.target=int\ getDuration()
+comment4.text=\n\ Get\ the\ duration\ of\ the\ note.\n\ @return\ The\ note's\ duration.\n
+numComments=5

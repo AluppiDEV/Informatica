@@ -9,8 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 7.0
  */
-public class TicketMachine
-{
+public class TicketMachine {
     // The price of a ticket from this machine.
     private int price;
     // The amount of money entered by a customer so far.
@@ -23,14 +22,10 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
-    public TicketMachine(int cost)
-    {
-        if (cost >= 0) 
-        {
+    public TicketMachine(int cost) {
+        if (cost >= 0) {
             price = cost;
-        }
-        else
-        {
+        } else {
             price = 1;
         }
         balance = 0;
@@ -40,24 +35,21 @@ public class TicketMachine
     /**
      * Return the price of a ticket.
      */
-    public int getPrice()
-    {
+    public int getPrice() {
         return price;
     }
 
     /**
      * Update the price of a ticket.
      */
-    public void newPrice(int cost)
-    {
+    public void newPrice(int cost) {
         price = cost;
     }
 
     /**
      * Update the price of a ticket.
      */
-    public void showPrce()
-    {
+    public void showPrce() {
         System.out.println("The actual price of a ticket is " + getPrice() + " cents.");
     }
 
@@ -65,25 +57,22 @@ public class TicketMachine
      * Return the amount of money already inserted for the
      * next ticket.
      */
-    public int getBalance()
-    {
+    public int getBalance() {
         return balance;
     }
-    
+
     /**
      * Return the amount of the money machine
      * had already colected.
      */
-    public int getTotal()
-    {
+    public int getTotal() {
         return total;
     }
 
     /**
      * Receive an amount of money from a customer.
      */
-    public void insertMoney(int amount)
-    {
+    public void insertMoney(int amount) {
         balance = balance + amount;
     }
 
@@ -92,30 +81,25 @@ public class TicketMachine
      * Update the total collected and
      * reduce the balance to zero.
      */
-    public void printTicket()
-    {
-        if(balance >= 5)
-        {
+    public void printTicket() {
+        if (balance >= 5) {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Ticket");
             System.out.println("# " + getPrice() + " cents.");
             System.out.println("##################");
-            if (balance - 5 > 0) 
-            {    
+            if (balance - 5 > 0) {
                 System.out.println("# Your rest is " + (balance - 5) + " cents");
                 System.out.println("##################");
             }
             System.out.println();
-    
+
             // Update the total collected with the balance.
             total = total + 5;
             // Clear the balance.
             balance = 0;
-        }
-        else
-        {
+        } else {
             System.out.println("#######################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Add more money");
@@ -126,10 +110,9 @@ public class TicketMachine
     }
 
     /**
-     * Print the instructon for the user 
+     * Print the instructon for the user
      */
-    public void prompt()
-    {
+    public void prompt() {
         System.out.println("You have to insert 5 cents to print a ticket");
         System.out.println("You already have " + getBalance() + " cents");
     }

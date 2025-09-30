@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=TuneCreator
+comment0.text=\n\ A\ class\ to\ create\ a\ simple\ tune.\n\n\ @author\ (your\ name)\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=TuneCreator()
+comment1.text=\n\ Create\ and\ initialise\ a\ TuneCreator\n
+comment2.params=
+comment2.target=void\ createAndPlay()
+comment2.text=\n\ Create\ a\ new\ tune\ and\ play\ it.\n
+numComments=3
