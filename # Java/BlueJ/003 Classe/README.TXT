@@ -4,9 +4,9 @@ Chi legge questo file, pur non sapendo nulla del progetto, dovrebbe ottenere tut
 le informazioni di cui ha bisogno. Probabilmente le informazioni essenziali sono:
 ----------------------------------------------------------------------------------
 
-NOME DEL PROGETTO:
+NOME DEL PROGETTO: Classe di studenti
 OBIETTIVO DEL PROGETTO
-VERSIONE oppure DATA:
-COME AVVIARE IL PROGETTO:
-AUTORI:
-ISTRUZIONI PER L'UTENTE:
+VERSIONE oppure DATA: 1.0
+COME AVVIARE IL PROGETTO: Usare BlueJ
+AUTORI: Luppi
+ISTRUZIONI PER L'UTENTE: Nessuna

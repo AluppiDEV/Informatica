@@ -2,32 +2,58 @@
 /**
  * Aggiungi qui una descrizione della classe Studente
  * 
- * @author (il tuo nome) 
- * @version (un numero di versione o una data)
+ * @author Luppi
+ * @version 1.0
  */
-public class Studente
-{
+public class Studente {
     // variabili d'istanza - sostituisci l'esempio che segue con il tuo
-    private int x;
+    private String name;
+    private float vote;
+    private String sex;
 
     /**
-     * Costruttore degli oggetti di classe  Studente
+     * Costruttore dell'oggetto Studete
      */
-    public Studente()
-    {
-        // inizializza le variabili d'istanza
-        x = 0;
+    public Studente(String name, float vote, String sex) {
+        this.name = name;
+        if (vote >= 0 && vote <= 10 && (vote * 2) % 1 == 0) {
+            this.vote = vote;
+        } else if (vote > 10) {
+            this.vote = 10;
+        } else if (vote < 0) {
+            this.vote = 0;
+        }
+        this.sex = sex;
     }
 
     /**
-     * Un esempio di metodo - aggiungi i tuoi commenti
-     * 
-     * @param  y   un parametro d'esempio per un metodo
-     * @return     la somma di x e y
+     * Metodi getter
      */
-    public int sampleMethod(int y)
-    {
-        // metti qui il tuo codice
-        return x + y;
+    public String getName() {
+        return name;
     }
+
+    public float getVote() {
+        return vote;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    /**
+     * Metodi setter
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setVote(float vote) {
+        this.vote = vote;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
 }
