@@ -15,25 +15,17 @@ La repo è organizzata in cartelle per argomenti o capitoli, ad esempio:
 ```
 /Luppi-Informatica
 ├── Compiti-2025/
-│ ├── 1 Sequenza/
-│ ├── 2 Selezione/
 │ └── ...
 ├── # C++
-│ ├── 01 Sintassi di base/
-│ ├── 02 Array/
-│ ├── 03 Matrici/
-│ ├── 04 Funzioni/
-│ ├── 05 Strutture/
-│ ├── 06 File/
 │ └── ...
 ├── # Python
 │ └── ...
 ├── # Java
-│ ├── 01 Argomento da iniziare
 │ └── ...
 ├── Librerie/
 ├── Progetti/
 ├── ...
+├── LICENSE
 └── README.md
 ```
 
