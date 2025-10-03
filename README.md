@@ -6,7 +6,7 @@
 ![Python](https://img.shields.io/badge/language-Python-3776AB?logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/language-Java-007396?logo=openjdk&logoColor=white)
 
-Questa repository contiene tutti gli esercizi di informatica svolti a scuola, scritti in **C++**, **Python** e altri linguaggi `(in futuro)`. Ogni file rappresenta un singolo esercizio, con codice pulito e commentato dove serve.
+Questa repository contiene tutti gli esercizi di informatica svolti a scuola, scritti in **C++**, **Python**, **Java** e altri linguaggi `(in futuro)`. Ogni file rappresenta un singolo esercizio, con codice pulito e commentato dove serve.
 
 ## 📂 Struttura
 
