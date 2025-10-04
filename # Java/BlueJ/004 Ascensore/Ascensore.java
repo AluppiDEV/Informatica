@@ -9,7 +9,7 @@ public class Ascensore {
     private int currentFloor;
     private int maxFloor;
     private int minFloor;
-    private boolean openDoors;
+    private boolean doors;
     private boolean busy;
 
     /**
@@ -19,7 +19,7 @@ public class Ascensore {
         this.maxFloor = maxFloor;
         this.minFloor = minFloor;
         currentFloor = minFloor;
-        openDoors = true;
+        doors = true;
         busy = false;
     }
 
@@ -28,45 +28,49 @@ public class Ascensore {
      */
     public void goToFloor(int floor) throws InterruptedException {
         if (floor <= maxFloor && floor >= minFloor && !busy) {
-            useBusy();
-            useDoor();
+            toggleBusy();
+            toggleDoor();
             if (currentFloor < floor) {
                 for (int i = currentFloor; i < floor; i++) {
-                    elevatorMove(true);
+                    elevatorMoveUp();
                 }
             } else {
-                for (int i = currentFloor; i < floor; i--) {
-                    elevatorMove(false);
+                for (int i = currentFloor; i > floor; i--) {
+                    elevatorMoveDown();
                 }
             }
-            useDoor();
-            useBusy();
+            toggleDoor();
+            toggleBusy();
         }
     }
 
     /**
      * Gestisce movimnto del singolo piano
      */
-    private void elevatorMove(boolean direction) throws InterruptedException {
-        if (direction) {
-            currentFloor++;
-        } else {
-            currentFloor--;
-        }
+    private void elevatorMoveUp() throws InterruptedException {
+        currentFloor++;
+        System.out.println("Ascensore al piano " + currentFloor);
+        Thread.sleep(2000);
+    }
+
+    private void elevatorMoveDown() throws InterruptedException {
+        currentFloor--;
+        System.out.println("Ascensore al piano " + currentFloor);
         Thread.sleep(2000);
     }
 
     /**
      * Gestione apertura e chiusura porte
      */
-    private void useDoor() {
-        openDoors = !openDoors;
+    private void toggleDoor() {
+        doors = !doors;
+        System.out.println("Porte " + (doors ? "aperte" : "chiuse"));
     }
 
     /**
      * Gestione apertura e chiusura porte
      */
-    private void useBusy() {
+    private void toggleBusy() {
         busy = !busy;
     }
 
@@ -76,6 +80,8 @@ public class Ascensore {
     public void callElevator(int floor) throws InterruptedException {
         if (!busy) {
             goToFloor(floor);
+        } else {
+            System.out.println("Ascensore occupato, attendere...");
         }
     }
 
