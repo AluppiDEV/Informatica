@@ -9,7 +9,7 @@ public class Ascensore {
     private int currentFloor;
     private int maxFloor;
     private int minFloor;
-    private boolean doors;
+    private boolean openDoors;
     private boolean busy;
 
     /**
@@ -19,7 +19,7 @@ public class Ascensore {
         this.maxFloor = maxFloor;
         this.minFloor = minFloor;
         currentFloor = minFloor;
-        doors = true;
+        openDoors = true;
         busy = false;
     }
 
@@ -63,8 +63,8 @@ public class Ascensore {
      * Gestione apertura e chiusura porte
      */
     private void toggleDoor() {
-        doors = !doors;
-        System.out.println("Porte " + (doors ? "aperte" : "chiuse"));
+        openDoors = !openDoors;
+        System.out.println("Porte " + (openDoors ? "aperte" : "chiuse"));
     }
 
     /**
