@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Client
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ Cliente\r\n\ \r\n\ @author\ Luppi\r\n\ @version\ 1.0\r\n
+comment1.params=name\ surname\ taxID
+comment1.target=Client(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Costruttore\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Getter\r\n
+comment3.params=
+comment3.target=java.lang.String\ getSurname()
+comment4.params=
+comment4.target=java.lang.String\ getTaxID()
+comment5.params=
+comment5.target=java.lang.String\ getClientData()
+comment5.text=\r\n\ Ottenimento\ dati\ del\ cliente\r\n
+numComments=6

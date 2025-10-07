@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=BedBreakfast
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ BedBreakfast\r\n\ \r\n\ @author\ (il\ tuo\ nome)\r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=maxRooms
+comment1.target=BedBreakfast(int)
+comment1.text=\r\n\ Costruttore\r\n
+comment2.params=tarif
+comment2.target=void\ instantiateRoom(float)
+comment2.text=\r\n\ "Costruisci"\ una\ stanza\r\n
+comment3.params=number\ numberOfDays\ clientName\ clientSurname\ clientTaxID
+comment3.target=void\ rent(int,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ Affitta\ la\ camera\r\n
+comment4.params=number
+comment4.target=void\ getRentDetail(int)
+comment4.text=\r\n\ Ottieni\ i\ dettagli\ del\ noleggio\r\n
+numComments=5

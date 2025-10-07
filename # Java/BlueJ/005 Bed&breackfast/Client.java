@@ -2,8 +2,8 @@
 /**
  * Aggiungi qui una descrizione della classe Cliente
  * 
- * @author (il tuo nome)
- * @version (un numero di versione o una data)
+ * @author Luppi
+ * @version 1.0
  */
 public class Client {
     // variabili d'istanza - sostituisci l'esempio che segue con il tuo
@@ -21,9 +21,22 @@ public class Client {
     }
 
     /*
+     * Getter
+     */
+    public String getName() {
+        return name;
+    }
+    public String getSurname() {
+        return surname;
+    }
+    public String getTaxID() {
+        return taxID;
+    }
+
+    /*
      * Ottenimento dati del cliente
      */
-    public String getData() {
-        return "Nome: " + name + " Cognome: " + surname + " Codice fiscale: " + taxID;
+    public String getClientData() {
+        return "# Nome: " + name + "\n# Cognome: " + surname + "\n# Codice fiscale: " + taxID;
     }
 }
