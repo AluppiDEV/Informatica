@@ -38,7 +38,7 @@ public class Libro {
     }
 
     public double sconto(double percentuale) {
-        return getPrice() * ( 1 - percentuale/100);
+        return getPrice() * (1 - percentuale / 100);
     }
 
 }

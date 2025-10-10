@@ -28,4 +28,13 @@ public class Biblioteca {
         return output;
     }
 
+    public boolean applicaSconto(int index, double percentuale) {
+        if (index < 0 || index >= bookNumber || books[index] == null) {
+            return false;
+        }
+        books[index].sconto(percentuale);
+        return true;
+    }
+
+
 }

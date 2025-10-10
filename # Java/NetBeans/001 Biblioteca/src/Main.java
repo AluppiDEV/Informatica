@@ -11,5 +11,15 @@ public class Main {
         library.addBook(new Libro("In cucina con tonypitony", "Tonypitony", 10));
 
         System.out.println(library.printAll());
+
+        for (int i = 0; i < 5; i++) {
+            if (library.applicaSconto(i, 10)) {
+                System.out.println("Sconto applicato correttamente per il libro: " + i+1);
+            } else {
+                System.out.println("Errore nell'applicare lo sconto");
+            }
+        }
+
+
     }
 }
