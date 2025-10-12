@@ -32,6 +32,7 @@ public class Mazzo {
         for (Carta c : mazzo) {
             output += c + "\n";
         }
+        output += "";
 
         return output;
     }

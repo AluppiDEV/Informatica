@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Mazzo m = new Mazzo(5);
+        Mazzo mazzo = new Mazzo(5);
 
         
-        m.aggiungiCarta("cuori", 10);
-        m.aggiungiCarta("quadri", 11);
-        m.aggiungiCarta("fiori", 12);
-        m.aggiungiCarta("picche", 13);
+        mazzo.aggiungiCarta("cuori", 10);
+        mazzo.aggiungiCarta("quadri", 11);
+        mazzo.aggiungiCarta("fiori", 12);
+        mazzo.aggiungiCarta("picche", 13);
 
-        System.out.println(m.toString());
+        System.out.println(mazzo.toString());
     }
 }
