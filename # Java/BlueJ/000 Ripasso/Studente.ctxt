@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Studente
+comment1.params=nome\ cognome\ eta
+comment1.target=Studente(java.lang.String,\ java.lang.String,\ int)
+comment2.params=voto
+comment2.target=void\ aggiungiVoto(double)
+comment3.params=
+comment3.target=void\ calcoloMedia()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
