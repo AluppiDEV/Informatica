@@ -9,5 +9,13 @@ public class Main {
         bs.aggiungiLibro(new Libro("In cucina con Tonypitony 3", "Tonypitony", 20));
 
         System.out.println(bs.stampaTutti());
+        
+        bs.rimuoviElemento(0);
+
+        System.out.println(bs.stampaTutti());
+        
+        bs.rimuoviDaTitolo("Morgan");
+
+        System.out.println(bs.stampaTutti());
     }
 }
