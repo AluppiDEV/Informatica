@@ -1,13 +1,13 @@
 
 public class Canzone {
-    
+
     private String titolo;
     private String artista;
     private int durata; /* Durata in secondi */
 
     public Canzone(String titolo, String artista, int durataSec) {
         this.titolo = titolo;
-        this.artista = artista; 
+        this.artista = artista;
         this.durata = Math.max(0, durataSec);
     }
 
@@ -35,16 +35,14 @@ public class Canzone {
         this.durata = durata;
     }
 
-    private String getTime() {
-        int t;
-
-        t = durata / 60;
-
-        return t + ":" + (durata -(60 * t));
-    }
+    public static String formatTimeShort(int totalSeconds) {
+    int minutes = totalSeconds / 60;
+    int seconds = totalSeconds % 60;
+    return String.format("%02d:%02d", minutes, seconds);
+}
 
     public String toString() {
-        return titolo + " di " + artista +  getTime();
+        return "\"" + titolo + "\" di " + artista + " | " + formatTimeShort(durata);
     }
 
 }
