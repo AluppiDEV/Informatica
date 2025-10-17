@@ -15,7 +15,6 @@
 
 # Formati per il java
 !**/*.java
-!**/*.class
 !**/*.ctxt
 !**/*.bluej
 
