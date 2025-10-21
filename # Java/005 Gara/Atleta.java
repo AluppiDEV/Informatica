@@ -52,14 +52,9 @@ public class Atleta {
     }
 
     public String toString() {
-        long cents = Math.round(tempoGara * 100);
-        long whole = cents / 100;
-        long frac = Math.abs(cents % 100);
-        String tempoStr = whole + "." + (frac < 10 ? "0" + frac : String.valueOf(frac));
-
         String s = "Atleta: " + nome + " (" + nazionalita + ")\n";
         s += "Disciplina: " + disciplina + "\n";
-        s += "Tempo di gara: " + tempoStr + " s";
+        s += "Tempo di gara: " + tempoGara + " s";
         return s;
     }
 
