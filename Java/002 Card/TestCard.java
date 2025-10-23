@@ -1,4 +1,4 @@
-public class Main {
+public class TestCard {
     public static void main(String[] args) {
         Mazzo mazzo = new Mazzo(5);
 

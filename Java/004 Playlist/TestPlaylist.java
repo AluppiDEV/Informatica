@@ -1,4 +1,4 @@
-public class Main {
+public class TestPlaylist {
     public static void main(String[] args) {
 
         Playlist p = new Playlist();

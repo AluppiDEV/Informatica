@@ -1,4 +1,4 @@
-public class Main {
+public class TestBiblioteca {
     public static void main(String[] args) {
         Biblioteca b = new Biblioteca(5);
         b.addBook(new Libro("Le mie cazzate", "Russo", 2));
