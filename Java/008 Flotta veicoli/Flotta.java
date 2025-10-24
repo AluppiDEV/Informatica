@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Flotta {
 
     private static int idCounter = 1;
-    private int id;
+    private final int id;
     private ArrayList<Veicolo> veicoli;
 
     public Flotta() {

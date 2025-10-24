@@ -2,11 +2,13 @@ import java.util.ArrayList;
 
 public class Veicolo {
 
-    String targa;
-    ArrayList<Componente> componenti;
+    private final String targa;
+    private final String type;
+    private ArrayList<Componente> componenti;
 
     public Veicolo(String targa) {
         this.targa = targa;
+        this.type = targa.split(" ")[0];
         componenti = new ArrayList<>();
         componenti.add(new Componente("GM"));
         componenti.add(new Componente("MT"));
@@ -16,6 +18,7 @@ public class Veicolo {
 
     public Veicolo(Veicolo v) {
         this.targa = v.getTarga();
+        this.type = this.getType();
         componenti = new ArrayList<>();
         this.componenti.addAll(v.getComponenti());
     }
@@ -34,6 +37,10 @@ public class Veicolo {
         }
     }
 
+    private void consumoCarburante() {
+        
+    }
+
     public String checkManutenzione() {
         StringBuilder str = new StringBuilder();
         for (Componente c : componenti) {
@@ -49,6 +56,10 @@ public class Veicolo {
 
     public ArrayList<Componente> getComponenti() {
         return componenti;
+    }
+
+    public String getType() {
+        return type;
     }
 
 }

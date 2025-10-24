@@ -1,7 +1,7 @@
 public class Componente {
 
     private static int idCounter = 1;
-    private String id;
+    private final String id;
     private int usura;
 
     public Componente(String type) {
