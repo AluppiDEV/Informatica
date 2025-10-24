@@ -36,5 +36,5 @@ public class Flotta {
     public ArrayList<Veicolo> getVeicoli() {
         return veicoli;
     }
-
+    
 }
