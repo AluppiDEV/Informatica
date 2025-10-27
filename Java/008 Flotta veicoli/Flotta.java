@@ -24,6 +24,8 @@ public class Flotta {
         for (Veicolo v : veicoli) {
             str.append("\n Vicolo targato: " + v.getTarga()).append("\n");
             str.append("---------------------------");
+            str.append(v.checkCarburante());
+            str.append("---------------------------");
             str.append(v.checkManutenzione());
         }
         return str.toString();
@@ -36,5 +38,5 @@ public class Flotta {
     public ArrayList<Veicolo> getVeicoli() {
         return veicoli;
     }
-    
+
 }
