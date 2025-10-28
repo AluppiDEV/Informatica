@@ -6,7 +6,7 @@ project_path = os.getcwd()
 count = 0
 for root, dirs, files in os.walk(project_path):
     for file in files:
-        if file.endswith(".class" ) | file.endswith(".zip") | file.endswith(".rar"):
+        if file.endswith(".class" ) | file.endswith(".zip") | file.endswith(".rar") | file.endswith(".puml"):
             file_path = os.path.join(root, file)
             try:
                 os.remove(file_path)
