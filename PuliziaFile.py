@@ -15,4 +15,4 @@ for root, dirs, files in os.walk(project_path):
             except Exception as e:
                 print(f"Errore su {file_path}: {e}")
 
-print(f"Pulizia completata. {count} file eliminati.")
+print(f"\nPulizia completata.\n{count} file eliminati.")
