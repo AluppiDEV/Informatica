@@ -24,6 +24,18 @@ package Java.Gestione_anagrafica;
  * Stampare a console la sua informazione specifica (es. "Sono un docente, insegno: Programmazione").
  */
 
-public class Docente {
+public class Docente extends Persona {
+
+    private String materiaInsegnata;
+
+    public Docente(String nome, String cognome, String codiceFiscale, Indirizzo indirizzo, String materiaInsegnata) {
+        super(nome, cognome, codiceFiscale, indirizzo);
+        this.materiaInsegnata = materiaInsegnata;
+    }
+
+    @Override
+    public String presentati() {
+        return super.presentati()  + " Materia insegnata: \"" + materiaInsegnata + "\"";
+    }
   
 }

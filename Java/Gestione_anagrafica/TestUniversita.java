@@ -31,5 +31,32 @@ package Java.Gestione_anagrafica;
  */
 
 public class TestUniversita {
-  
+    public static void main(String[] args) {
+
+        // Crea un oggetto Indirizzo per lo studente
+        Indirizzo indirizzoStud = new Indirizzo("Via Roma", "10", "Milano", "20100");
+
+        // Crea un oggetto Studente, passando dati anagrafici e indirizzoStud
+        Studente studente = new Studente("Luca", "Bianchi", "CODICEFISCALE LUCA", indirizzoStud, "S89923");
+
+        // Crea un oggetto Indirizzo per il docente
+        Indirizzo indirizzoDoc = new Indirizzo("Corso Italia", "25", "Torino", "10100");
+
+        // Crea un oggetto Docente, passando dati anagrafici e indirizzoDoc
+        Docente docente = new Docente("Maria", "Rossi", "CODICEFISCALE LUCA", indirizzoDoc, "D84537");
+
+        // Linea di separazione
+        System.out.println("====================================");
+
+        // Metodi dello studente
+        studente.presentati();
+        studente.stampaIndirizzo();
+
+        // Linea di separazione
+        System.out.println("====================================");
+
+        // Metodi del docente
+        docente.presentati();
+        docente.stampaIndirizzo();
+    }
 }

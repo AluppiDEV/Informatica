@@ -24,6 +24,18 @@ package Java.Gestione_anagrafica;
  * Stampare a console la sua informazione specifica (es. "Sono uno studente, matricola: 12345").
  */
 
-public class Studente {
-  
+public class Studente extends Persona {
+
+    private String matricola;
+
+    public Studente(String nome, String cognome, String codiceFiscale, Indirizzo indirizzo, String matricola) {
+        super(nome, cognome, codiceFiscale, indirizzo);
+        this.matricola = matricola;
+    }
+
+    @Override
+    public String presentati() {
+        return super.toString() + " Matricola: \"" + matricola + "\"";
+    }
+
 }

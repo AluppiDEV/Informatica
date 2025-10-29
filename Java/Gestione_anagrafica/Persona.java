@@ -43,8 +43,7 @@ public class Persona {
     this.indirizzo = indirizzo;
   }
 
-  @Override
-  public String toString() {
+  public String presentati() {
     StringBuilder str = new StringBuilder();
     str.append("Mi chiamo " + nome + " " + cognome + " CF: \"" + codiceFiscale + "\"");
     return str.toString();
