@@ -2,8 +2,8 @@ package Java.Assemblaggio_pc;
 
 public class ComponenteHardware {
 
-  private String modello;
-  private double prezzo;
+  protected String modello;
+  protected double prezzo;
 
   public ComponenteHardware(String modello, double prezzo) {
     this.modello = modello;
