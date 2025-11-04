@@ -16,11 +16,7 @@ public class Computer {
     }
 
     public double calcolaPrezzoBase() {
-        double tot = 0;
-        tot += proceessore.getPrezzo();
-        tot += memoria.getPrezzo();
-        tot += archiviazione.getPrezzo();
-        return tot;
+        return proceessore.getPrezzo() + memoria.getPrezzo() + archiviazione.getPrezzo();
     }
 
     public double calcolaPrezzoScontato(double percentualeSconto) {
@@ -37,11 +33,12 @@ public class Computer {
         str += proceessore + "\n";
         str += memoria + "\n";
         str += archiviazione + "\n";
-        str += "# Prezzi #";
-        str += "Prezzo totale: " + calcolaPrezzoBase();
-        str += "Prezzo totale scontato: " + calcolaPrezzoScontato(percentualeSconto);
-        str += "IVA totale: " + calcolaPrezzoBase() * ALIQUOTA_IVA;
-        str += "Prezzo finale: " + calcolaPrezzoScontato(percentualeSconto) * (1 + ALIQUOTA_IVA / 100);
+        str += "# Prezzi #" + "\n";
+        str += "Prezzo totale: " + String.format("%.2f", calcolaPrezzoBase()) + "\n";
+        str += "Prezzo totale scontato: " + String.format("%.2f", calcolaPrezzoScontato(percentualeSconto)) + "\n";
+        str += "IVA totale: " + String.format("%.2f", calcolaPrezzoBase() * ALIQUOTA_IVA) + "\n";
+        str += "Prezzo finale: "
+                + String.format("%.2f", calcolaPrezzoScontato(percentualeSconto) * (1 + ALIQUOTA_IVA / 100)) + "\n";
         return str;
     }
 

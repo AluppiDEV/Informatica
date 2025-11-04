@@ -4,7 +4,7 @@ Chi legge questo file, pur non sapendo nulla del progetto, dovrebbe ottenere tut
 le informazioni di cui ha bisogno. Probabilmente le informazioni essenziali sono:
 ----------------------------------------------------------------------------------
 
-NOME DEL PROGETTO: Libro
+NOME DEL PROGETTO: Java.Biblioteca_smart.Libro
 OBIETTIVO DEL PROGETTO
 VERSIONE oppure DATA: 29/29/2025
 COME AVVIARE IL PROGETTO:

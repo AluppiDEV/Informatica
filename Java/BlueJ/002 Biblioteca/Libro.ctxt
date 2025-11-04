@@ -1,9 +1,9 @@
 #BlueJ class context
-comment0.target=Libro
-comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ Libro\r\n\ \r\n\ @author\ Luppi\r\n\ @version\ 29/09/2025\r\n\ \r\n\ Attributi\:\ titolo,\ autore,\ pagine,\ ISBN,\ inPrestito\r\n\r\n\ Definire\ il\ costruttore,\ i\ setter\ e\ i\ getter.\r\n\r\n\ Definire\ i\ metodi\:\ stampaAutore,\ stampaTitolo,\ stampaDettagli,\ prendiPrestito\r\n
+comment0.target=Java.Biblioteca_smart.Libro
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ Java.Biblioteca_smart.Libro\r\n\ \r\n\ @author\ Luppi\r\n\ @version\ 29/09/2025\r\n\ \r\n\ Attributi\:\ titolo,\ autore,\ pagine,\ ISBN,\ inPrestito\r\n\r\n\ Definire\ il\ costruttore,\ i\ setter\ e\ i\ getter.\r\n\r\n\ Definire\ i\ metodi\:\ stampaAutore,\ stampaTitolo,\ stampaDettagli,\ prendiPrestito\r\n
 comment1.params=titolo\ autore\ pagine\ codice
-comment1.target=Libro(java.lang.String,\ java.lang.String,\ int,\ int)
-comment1.text=\r\n\ Costruttore\ degli\ oggetti\ di\ classe\ Libro\r\n
+comment1.target=Java.Biblioteca_smart.Libro(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Costruttore\ degli\ oggetti\ di\ classe\ Java.Biblioteca_smart.Libro\r\n
 comment10.params=ISBN
 comment10.target=void\ setISBN(int)
 comment11.params=loan

@@ -15,7 +15,7 @@ public class TestAssemblaggio {
     double sconto = 15.0;
 
     // Stampa della configurazione con sconto
-    pc.stampaConfigurazione(sconto);
+      System.out.println(pc.stampaConfigurazione(sconto));
   }
 
 }

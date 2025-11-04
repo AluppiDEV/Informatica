@@ -1,6 +1,6 @@
 package Java.Assemblaggio_pc;
 
-public class ComponenteHardware {
+public abstract class ComponenteHardware {
 
   protected String modello;
   protected double prezzo;
