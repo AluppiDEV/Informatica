@@ -19,6 +19,9 @@
 !**/*.bluej
 !**/*.png
 
+# Formati per IntelliJ
+!**/*.iml
+!**/*.xml
 
 # File geerici
 !LICENSE
