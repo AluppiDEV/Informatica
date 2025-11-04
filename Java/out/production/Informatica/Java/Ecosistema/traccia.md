@@ -1,4 +1,4 @@
-Classe TestEcosistema (Main)
+Classe TestEcosistema (Java.Biblioteca_smart.Main)
 Crea una classe con un metodo main per testare la gerarchia:
 
 Crea l'Ecosistema (Livello 1): Crea un oggetto Ecosistema (es. "Riserva Naturale").

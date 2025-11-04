@@ -31,11 +31,10 @@ public class Stanza {
     }
 
     public String generaRapportoCompletoStanza() {
-        return
-        lucePrincipale.generaRapportoStato() + "\n" +
-        luceSecondaria.generaRapportoStato() + "\n" +
-        termostatoStanza.generaRapportoStato() + "\n" +
-        videocameraIngresso.generaRapportoStato() + "\n";
+        return lucePrincipale.generaRapportoStato() + "\n" +
+                luceSecondaria.generaRapportoStato() + "\n" +
+                termostatoStanza.generaRapportoStato() + "\n" +
+                videocameraIngresso.generaRapportoStato() + "\n";
     }
 
     public String getLucePrincipale() {

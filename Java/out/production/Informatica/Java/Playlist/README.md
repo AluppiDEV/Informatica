@@ -1,5 +1,5 @@
 Esercizio: Gestione di una Playlist Musicale 🎵
-Obiettivo: Creare un'applicazione Java per gestire una playlist, implementando le classi Canzone e Playlist e testandole con una classe Main.
+Obiettivo: Creare un'applicazione Java per gestire una playlist, implementando le classi Canzone e Playlist e testandole con una classe Java.Biblioteca_smart.Main.
 
 1. Classe Canzone
    Definisci una classe Canzone che rappresenti un singolo brano.
@@ -41,7 +41,7 @@ La durata totale della playlist, formattata come HH:mm:ss o mm:ss se le ore sono
 
 Se la playlist è vuota, stampa un messaggio adeguato.
 
-3. Classe Main
+3. Classe Java.Biblioteca_smart.Main
    Crea una classe eseguibile per testare il programma.
 
 Crea un'istanza di Playlist.

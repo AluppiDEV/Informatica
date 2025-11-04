@@ -16,6 +16,7 @@ public class VideocameraSicurezza extends Dispositivo {
     @Override
     public void spegni() {
         stato = false;
+        staRegistrando = false;
     }
 
     @Override

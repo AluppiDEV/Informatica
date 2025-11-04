@@ -112,7 +112,7 @@ Cicla sull'ArrayList righe e stampa ogni RigaOrdine (usando il suo metodo toStri
 
 Stampa il totale finale formattato, chiamando calcolaTotaleOrdine().
 
-Compito: Classe TestEcommerce (Main)
+Compito: Classe TestEcommerce (Java.Biblioteca_smart.Main)
 Crea una classe TestEcommerce con un metodo main per verificare che tutto funzioni.
 
 Crea 3 o 4 oggetti Prodotto (es. Mouse, Tastiera, Monitor, Cuffie).
