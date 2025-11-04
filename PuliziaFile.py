@@ -16,3 +16,4 @@ for root, dirs, files in os.walk(project_path):
                 print(f"Errore su {file_path}: {e}")
 
 print(f"\nPulizia completata.\n{count} file eliminati.")
+os.system("pause")
