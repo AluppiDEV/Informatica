@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Flotta_spaziale/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flotta_spaziale/.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flotta_spaziale/.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flotta_spaziale/POJO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Informatica/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Informatica/Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Informatica/Java/Informatica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Informatica/Java/Informatica.iml" afterDir="false" />
-    </list>
+    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
