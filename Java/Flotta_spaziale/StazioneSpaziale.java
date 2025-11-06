@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class StazioneSpaziale {
 
     private String nomeStazione;
-    ArrayList<NaveSpaziale> flottaDisponibile;
+    private ArrayList<NaveSpaziale> flottaDisponibile;
     private ArrayList<Missione> missioniInAttesa;
 
     public StazioneSpaziale(String nomeStazione) {
