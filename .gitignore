@@ -23,6 +23,9 @@
 !**/*.iml
 !**/*.xml
 
+# JavaFX
+!JavaFX/
+
 # File geerici
 !LICENSE
 !*/
