@@ -1,6 +1,7 @@
 package Java.Flotta_spaziale;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class StazioneSpaziale {
 
@@ -39,7 +40,7 @@ public class StazioneSpaziale {
         if (naviCandidate.isEmpty()) {
             return null;
         } else {
-            naviCandidate.sort((n1, n2) -> Double.compare(n1.calcolaCostoOperativo(missione), n2.calcolaCostoOperativo(missione)));
+            naviCandidate.sort(Comparator.comparingDouble(n -> n.calcolaCostoOperativo(missione)));
             flottaDisponibile.get(flottaDisponibile.indexOf(naviCandidate.get(0))).stato = StatoNave.IN_MISSIONE;
             missioniInAttesa.remove(missione);
             return naviCandidate.get(0);

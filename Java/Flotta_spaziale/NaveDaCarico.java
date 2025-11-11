@@ -6,7 +6,7 @@ public class NaveDaCarico extends NaveSpaziale {
 
     public NaveDaCarico(String idRegistrazione, double capacitaMassima, StatoNave stato, boolean stivaSchermata) {
         super(idRegistrazione, capacitaMassima, stato);
-        stivaSchermata = stivaSchermata;
+        this.stivaSchermata = stivaSchermata;
     }
 
     @Override
