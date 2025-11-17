@@ -16,6 +16,22 @@ public abstract class Personaggio {
         inventario = new ArrayList<>();
     }
 
+    public int getLpMax() {
+        return lpMax;
+    }
+
+    public void setLpMax(int lpMax) {
+        this.lpMax = lpMax;
+    }
+
+    public int getLp() {
+        return lp;
+    }
+
+    public void setLp(int lp) {
+        this.lp = lp;
+    }
+
     public abstract boolean isAlive();
 
     public abstract int attacca();
@@ -27,6 +43,19 @@ public abstract class Personaggio {
     public void aggiungiOggetto(Oggetto oggetto) {
         inventario.add(oggetto);
     }
+
+    public boolean usaOggetto(Oggetti obj) {
+        for (Oggetto o : inventario) {
+            if (o.getTipo() == obj) {
+                boolean stato = o.usa(Personaggio.this);
+                if (stato) inventario.remove(o);
+                return stato;
+
+            }
+        }
+        return false; // non trovato
+    }
+
 
     public void rimuoviOggetto(Oggetto oggetto) {
         inventario.remove(oggetto);

@@ -1,8 +1,25 @@
 package Java.RPG_un_po_meno_baracca;
 
-public class Oggetto {
+public abstract class Oggetto {
 
-    private String nome;
-    private boolean isUsable;
+    protected String nome;
+    protected Oggetti tipo;
+
+    public Oggetto(String nome, Oggetti tipo) {
+        this.nome = nome;
+        this.tipo = tipo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Oggetti getTipo() {
+        return tipo;
+    }
+
+    public boolean usa(Personaggio p) {
+        return false;
+    }
 
 }
