@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.javafx_4.HelloController"
+      spacing="15"
+      style="-fx-background-color: #f2f2f7; -fx-padding: 15;">
+
+    <children>
+
+        <BorderPane style="-fx-background-color: white;
+                           -fx-padding: 15;
+                           -fx-background-radius: 12;
+                           -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 2);">
+
+            <!-- Top -->
+            <top>
+                <Label text="Clicca 10 volte per vedere l'immagine"
+                       style="-fx-font-size: 18;
+                              -fx-padding: 10;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #333;
+                              -fx-alignment: center;"
+                       BorderPane.alignment="CENTER"/>
+            </top>
+
+            <!-- Left -->
+            <left>
+                <ImageView fx:id="immagine"
+                           fitHeight="220" fitWidth="220"
+                           preserveRatio="true"
+                           BorderPane.alignment="CENTER"
+                           style="-fx-padding: 10;"/>
+            </left>
+
+            <!-- Center -->
+            <center>
+                <VBox alignment="CENTER" spacing="10">
+                    <children>
+                        <Button text="Bottoncino"
+                                prefWidth="160" prefHeight="160"
+                                onMouseClicked="#getTime"
+                                style="-fx-background-color: #4A90E2;
+                                       -fx-background-radius: 12;
+                                       -fx-text-fill: white;
+                                       -fx-font-size: 18;
+                                       -fx-cursor: hand;"/>
+
+                        <Label fx:id="clicLabel"
+                               text="Clicca il bottone"
+                               style="-fx-font-size: 14; -fx-text-fill: #555;"/>
+                    </children>
+                </VBox>
+            </center>
+
+            <!-- Right -->
+            <right>
+                <VBox spacing="10" style="-fx-padding: 10;">
+                    <children>
+                        <Label text="Azioni"
+                               style="-fx-font-size: 16;
+                                      -fx-font-weight: bold;
+                                      -fx-text-fill: #333;"/>
+
+                        <ListView fx:id="lista"
+                                  prefWidth="220"
+                                  style="-fx-background-radius: 10;
+                                         -fx-control-inner-background: #fafafa;"></ListView>
+                    </children>
+                </VBox>
+            </right>
+
+            <!-- Bottom -->
+            <bottom>
+                <Label fx:id="orario"
+                       text="Orario"
+                       style="-fx-background-color: #4A90E2;
+                              -fx-text-fill: white;
+                              -fx-font-size: 16;
+                              -fx-alignment: center;
+                              -fx-padding: 12;
+                              -fx-background-radius: 8;"
+                       BorderPane.alignment="CENTER"/>
+            </bottom>
+
+        </BorderPane>
+    </children>
+</VBox>
