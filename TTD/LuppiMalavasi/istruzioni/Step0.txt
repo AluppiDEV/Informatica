@@ -1,0 +1,33 @@
+Create un nuovo progetto con formato dai cognomi della coppia
+Create un nuova classe, Game  (CON LA G MAIUSCOLA)
+Create lo scheletro JUnit della classe Game:
+
+        NETBEANS:
+	Click destro su Game.java
+	Tools > Create/Update Test 
+	Click su [x] Public methods > [OK] > Junit 5.x > [Select]
+	
+	IDEA:
+	Click destro sul nome del progetto > New > Directory    e chiamatela test 
+	Click destro su directory test > Mark directory as      Test sources Root
+	Nel file Game.java Click destro sulla PAROLA Game  e premere [Alt]-[Invio] > Create test
+	Premere [Fix] e poi [Ok] (il programma scarica libreria)
+	
+	
+	Scrivere dentro la classe test questo metodo
+	   @Test
+       void prova() {fail("errore");}
+
+           Se @Test è scritto in rosso: 
+		Click sulla parola Test
+                [Alt]-[Invio]
+
+	Click destro su "GameTest.java" > Run 'Gametest.java'
+
+	--> Deve dare errore. 
+
+	Passare allo step successivo
+
+
+
+       
