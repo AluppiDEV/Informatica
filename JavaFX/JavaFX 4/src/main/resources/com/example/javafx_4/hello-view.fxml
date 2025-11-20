@@ -74,7 +74,7 @@
                         <ListView fx:id="lista"
                                   prefWidth="220"
                                   style="-fx-background-radius: 10;
-                                         -fx-control-inner-background: #fafafa;"></ListView>
+                                         -fx-control-inner-background: #fafafa;"/>
                     </children>
                 </VBox>
             </right>
