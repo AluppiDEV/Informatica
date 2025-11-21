@@ -6,22 +6,18 @@ public abstract class Personaggio {
 
     protected String nome;
     protected int lp;
-    protected int lpMax;
-    protected ArrayList<Oggetto> inventario;
+    protected final int lpMax;
+    protected Inventario inventario;
 
     public Personaggio(String nome, int lp, int lpMax) {
         this.nome = nome;
         this.lp = lp;
         this.lpMax = lpMax;
-        inventario = new ArrayList<>();
+        this.inventario = new Inventario(Personaggio.this);
     }
 
     public int getLpMax() {
         return lpMax;
-    }
-
-    public void setLpMax(int lpMax) {
-        this.lpMax = lpMax;
     }
 
     public int getLp() {
@@ -32,33 +28,27 @@ public abstract class Personaggio {
         this.lp = lp;
     }
 
-    public abstract boolean isAlive();
-
-    public abstract int attacca();
+    public boolean isAlive() {
+        return lp > 0;
+    };
 
     public void riceviDanno(int danno) {
         lp -= danno;
     }
 
+    public abstract int attacca(Personaggio p);
+
+    // Gestione inventario
     public void aggiungiOggetto(Oggetto oggetto) {
-        inventario.add(oggetto);
+        inventario.aggiungiOggetto(oggetto);
     }
-
-    public boolean usaOggetto(Oggetti obj) {
-        for (Oggetto o : inventario) {
-            if (o.getTipo() == obj) {
-                boolean stato = o.usa(Personaggio.this);
-                if (stato) inventario.remove(o);
-                return stato;
-
-            }
-        }
-        return false; // non trovato
-    }
-
 
     public void rimuoviOggetto(Oggetto oggetto) {
-        inventario.remove(oggetto);
+        inventario.rimuoviOggetto(oggetto);
+    }
+
+    public boolean usaOggetto(Tipi tipo) {
+        return inventario.usaOggetto(tipo);
     }
 
 }

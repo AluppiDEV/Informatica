@@ -15,7 +15,8 @@ public class Guerriero extends Personaggio {
     }
 
     @Override
-    public int attacca() {
+    public int attacca(Personaggio p) {
+        p.riceviDanno(forzaFisica);
         return forzaFisica;
     }
 }

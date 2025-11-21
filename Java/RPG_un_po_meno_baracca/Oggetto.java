@@ -3,9 +3,9 @@ package Java.RPG_un_po_meno_baracca;
 public abstract class Oggetto {
 
     protected String nome;
-    protected Oggetti tipo;
+    protected Tipi tipo;
 
-    public Oggetto(String nome, Oggetti tipo) {
+    public Oggetto(String nome, Tipi tipo) {
         this.nome = nome;
         this.tipo = tipo;
     }
@@ -14,7 +14,7 @@ public abstract class Oggetto {
         return nome;
     }
 
-    public Oggetti getTipo() {
+    public Tipi getTipo() {
         return tipo;
     }
 

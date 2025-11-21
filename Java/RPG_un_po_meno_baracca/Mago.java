@@ -16,9 +16,18 @@ public class Mago extends Personaggio {
         return lp > 0;
     }
 
+    private int calcolaDanno() {
+        if (mana > 0) {
+            mana *= (1 - potereMagico / 100);
+            return potereMagico;
+        } else {
+            return 5;
+        }
+    }
+
     @Override
-    public int attacca() {
-        mana = mana * (1 - potereMagico / 100);
-        return potereMagico;
+    public int attacca(Personaggio p) {
+        p.riceviDanno(calcolaDanno());
+        return calcolaDanno();
     }
 }

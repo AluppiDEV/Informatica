@@ -1,11 +1,9 @@
 package Java.RPG_un_po_meno_baracca;
 
-import Java.Gestione_anagrafica.Persona;
-
 public class PozioneCurativa extends Oggetto {
 
     public PozioneCurativa(String nome) {
-        super(nome, Oggetti.POZIONE);
+        super(nome, Tipi.POZIONE_CURATIVA);
     }
 
     @Override
