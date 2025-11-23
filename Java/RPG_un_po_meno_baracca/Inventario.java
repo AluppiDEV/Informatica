@@ -31,4 +31,12 @@ public class Inventario {
         }
         return false; // non trovato
     }
+
+    // Informazioni inventario
+    @Override
+    public String toString() {
+        return "Inventario{" +
+                "inventario=" + inventario +
+                '}';
+    }
 }

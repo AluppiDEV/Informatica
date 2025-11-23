@@ -3,22 +3,32 @@ package Java.RPG_un_po_meno_baracca;
 public class Mago extends Personaggio {
 
     private int potereMagico;
-    private int mana;
+    private int mp;
+    private final int mpMax;
 
-    public Mago(String nome, int lp, int lpMax, int potereMagico, int mana) {
-        super(nome, lp, lpMax);
+    public Mago(String nome, int lpMax, int potereMagico, int mpMax) {
+        super(nome, lpMax);
+        this.classe = Classi.MAGO;
         this.potereMagico = potereMagico;
-        this.mana = mana;
+        this.mp = mpMax;
+        this.mpMax = mpMax;
     }
 
-    @Override
-    public boolean isAlive() {
-        return lp > 0;
+    public int getMpMax() {
+        return mpMax;
+    }
+
+    public int getMp() {
+        return mp;
+    }
+
+    public void setMp(int mp) {
+        this.mp = mp;
     }
 
     private int calcolaDanno() {
-        if (mana > 0) {
-            mana *= (1 - potereMagico / 100);
+        if (mp > 0) {
+            mp *= (1 - potereMagico / 100);
             return potereMagico;
         } else {
             return 5;

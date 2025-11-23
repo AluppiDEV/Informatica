@@ -22,4 +22,14 @@ public abstract class Oggetto {
         return false;
     }
 
+    // Informazioni oggetto
+
+
+    @Override
+    public String toString() {
+        return "Oggetto{" +
+                "nome='" + nome + '\'' +
+                ", tipo=" + tipo +
+                '}';
+    }
 }

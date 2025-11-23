@@ -4,14 +4,10 @@ public class Guerriero extends Personaggio {
 
     private int forzaFisica;
 
-    public Guerriero(String nome, int lp, int lpMax, int forzaFisica) {
-        super(nome, lp, lpMax);
+    public Guerriero(String nome, int lpMax, int forzaFisica) {
+        super(nome, lpMax);
+        this.classe = Classi.GUERIERO;
         this.forzaFisica = forzaFisica;
-    }
-
-    @Override
-    public boolean isAlive() {
-        return lp > 0;
     }
 
     @Override

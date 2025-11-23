@@ -5,13 +5,14 @@ import java.util.ArrayList;
 public abstract class Personaggio {
 
     protected String nome;
+    protected Classi classe;
     protected int lp;
     protected final int lpMax;
     protected Inventario inventario;
 
-    public Personaggio(String nome, int lp, int lpMax) {
+    public Personaggio(String nome, int lpMax) {
         this.nome = nome;
-        this.lp = lp;
+        this.lp = lpMax;
         this.lpMax = lpMax;
         this.inventario = new Inventario(Personaggio.this);
     }
@@ -32,6 +33,10 @@ public abstract class Personaggio {
         return lp > 0;
     };
 
+    public Classi getClasse() {
+        return classe;
+    }
+
     public void riceviDanno(int danno) {
         lp -= danno;
     }
@@ -39,6 +44,7 @@ public abstract class Personaggio {
     public abstract int attacca(Personaggio p);
 
     // Gestione inventario
+
     public void aggiungiOggetto(Oggetto oggetto) {
         inventario.aggiungiOggetto(oggetto);
     }
@@ -51,4 +57,14 @@ public abstract class Personaggio {
         return inventario.usaOggetto(tipo);
     }
 
+    // Informazioni personaggio
+    @Override
+    public String toString() {
+        return "Personaggio{" +
+                "nome='" + nome + '\'' +
+                ", classe=" + classe +
+                ", lp=" + lp +
+                ", inventario=" + inventario +
+                '}';
+    }
 }
