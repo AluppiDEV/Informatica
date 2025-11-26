@@ -27,9 +27,6 @@ public abstract class Oggetto {
 
     @Override
     public String toString() {
-        return "Oggetto{" +
-                "nome='" + nome + '\'' +
-                ", tipo=" + tipo +
-                '}';
+        return "[Oggetto: " + nome + ", Tipo: " + tipo + "]";
     }
 }

@@ -7,9 +7,14 @@
     <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Guerriero.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Guerriero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Inventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Inventario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Mago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Oggetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Oggetto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Personaggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Personaggio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/PozioneCurativa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/RPG_un_po_meno_baracca.png" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/RPG_un_po_meno_baracca.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Informatica/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Informatica/Java/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,34 +46,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestDomotica.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestZoo.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Talpa/Documents/GitHub/Informatica/Java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Party.executor": "Run",
+    "Application.TestDomotica.executor": "Run",
+    "Application.TestZoo.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Talpa/Documents/GitHub/Informatica/Java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "file.status.colors",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\VGit\Documents\GitHub\Informatica\Java" />
@@ -161,12 +167,25 @@
       <workItem from="1763395687677" duration="7537000" />
       <workItem from="1763720091936" duration="3402000" />
       <workItem from="1763906887723" duration="276000" />
-      <workItem from="1763907452958" duration="2976000" />
+      <workItem from="1763907452958" duration="6789000" />
+      <workItem from="1763918498456" duration="67000" />
+      <workItem from="1763918601177" duration="1084000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

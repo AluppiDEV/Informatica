@@ -35,8 +35,17 @@ public class Inventario {
     // Informazioni inventario
     @Override
     public String toString() {
-        return "Inventario{" +
-                "inventario=" + inventario +
-                '}';
+        if (inventario.isEmpty()) {
+            return "(vuoto)";
+        }
+
+        StringBuilder str = new StringBuilder();
+        str.append("\n  - Contenuto:\n");
+
+        for (Oggetto o : inventario) {
+            str.append("    ").append(o).append("\n");
+        }
+
+        return str.toString();
     }
 }

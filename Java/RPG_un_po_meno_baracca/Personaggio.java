@@ -60,11 +60,11 @@ public abstract class Personaggio {
     // Informazioni personaggio
     @Override
     public String toString() {
-        return "Personaggio{" +
-                "nome='" + nome + '\'' +
-                ", classe=" + classe +
-                ", lp=" + lp +
-                ", inventario=" + inventario +
-                '}';
+        return "\n--- Personaggio ---" +
+                "\nNome: " + nome +
+                "\nClasse: " + classe +
+                "\nLP: " + lp + "/" + lpMax +
+                "\nInventario: " + inventario +
+                "\n-------------------";
     }
 }
