@@ -7,12 +7,25 @@ public class PozioneCurativa extends Oggetto {
     }
 
     @Override
-    public boolean usa(Personaggio p) {
-        int lpRemain = p.getLpMax()-p.getLp();
-        for (int i = 0; i < lpRemain/10; i++) {
-            int newLp = p.getLp() + lpRemain /10;
-            p.setLp(newLp);
+    public String usa(Personaggio p) {
+        if (p.getLp() >= p.getLpMax()) {
+            return null; // Già al massimo della salute, oggetto non consumato
         }
-        return true;
+        
+        int lpMancanti = p.getLpMax() - p.getLp();
+        int incremento = 10; // Cura 10 LP alla volta
+        
+        StringBuilder messaggio = new StringBuilder();
+        messaggio.append("💚 Usando Pozione Curativa...\n");
+        
+        // Cura ad intervalli regolari fino al massimo
+        for (int i = 0; i < lpMancanti; i += incremento) {
+            int cura = Math.min(incremento, lpMancanti - i);
+            p.setLp(p.getLp() + cura);
+            messaggio.append("   LP: ").append(p.getLp()).append("/").append(p.getLpMax()).append("\n");
+        }
+        
+        messaggio.append("💚 Completamente guarito!");
+        return messaggio.toString();
     }
 }

@@ -2,7 +2,7 @@ package Java.RPG_un_po_meno_baracca;
 
 public class Mago extends Personaggio {
 
-    private int potereMagico;
+    private final int potereMagico;
     private int mp;
     private final int mpMax;
 
@@ -39,5 +39,17 @@ public class Mago extends Personaggio {
     public int attacca(Personaggio p) {
         p.riceviDanno(calcolaDanno());
         return calcolaDanno();
+    }
+
+    @Override
+    public String toString() {
+        return "\n--- Personaggio ---" +
+                "\nNome: " + nome +
+                "\nClasse: " + classe +
+                "\nLP: " + lp + "/" + lpMax +
+                "\nMP: " + mp + "/" + mpMax +
+                "\nPotere Magico: " + potereMagico +
+                "\nInventario: " + inventario +
+                "\n-------------------";
     }
 }

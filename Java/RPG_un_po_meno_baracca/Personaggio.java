@@ -14,7 +14,7 @@ public abstract class Personaggio {
         this.nome = nome;
         this.lp = lpMax;
         this.lpMax = lpMax;
-        this.inventario = new Inventario(Personaggio.this);
+        this.inventario = new Inventario();
     }
 
     public int getLpMax() {
@@ -53,8 +53,12 @@ public abstract class Personaggio {
         inventario.rimuoviOggetto(oggetto);
     }
 
-    public boolean usaOggetto(Tipi tipo) {
-        return inventario.usaOggetto(tipo);
+    public String usaOggetto(int indice) {
+        return inventario.usaOggetto(indice, Personaggio.this);
+    }
+
+    public String getInventarioList() {
+        return inventario.getInventarioList();
     }
 
     // Informazioni personaggio

@@ -18,8 +18,8 @@ public abstract class Oggetto {
         return tipo;
     }
 
-    public boolean usa(Personaggio p) {
-        return false;
+    public String usa(Personaggio p) {
+        return null;
     }
 
     // Informazioni oggetto
