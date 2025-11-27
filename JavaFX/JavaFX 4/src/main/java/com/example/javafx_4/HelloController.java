@@ -2,45 +2,117 @@ package com.example.javafx_4;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.image.*;
-import javafx.scene.layout.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-
+/**
+ * Controller class following MVC pattern.
+ * Handles user interactions and updates the view based on the model.
+ */
 public class HelloController {
 
-    int count = 0;
+    private final EventModel model;
 
     @FXML
-    private Label orario;
+    private ListView<String> eventList;
 
     @FXML
-    private ImageView immagine;
+    private ImageView imageView;
 
     @FXML
-    protected void getTime() {
-        LocalTime ora = LocalTime.now();
-        String testo = ora.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
-        count++;
-        orario.setText(testo);
-        if (count == 10 ){
-            immagine.setImage(new javafx.scene.image.Image("file:src/main/resources/img/ciao.png"));
+    private MenuItem menuShowStats;
+
+    @FXML
+    private MenuItem menuClearList;
+
+    @FXML
+    private MenuItem menuHideImage;
+
+    public HelloController() {
+        this.model = new EventModel();
+    }
+
+    /**
+     * Called when the FXML is loaded
+     */
+    @FXML
+    public void initialize() {
+        // Initially hide the image
+        imageView.setVisible(false);
+        imageView.setManaged(false);
+    }
+
+    /**
+     * Handles key press events - adds event to model and updates view
+     */
+    public void handleKeyPress() {
+        // Add event to model
+        model.addEvent();
+
+        // Update the list view
+        eventList.getItems().add(model.getLastEventFormatted());
+
+        // Show image if 10 or more events
+        if (model.shouldShowImage()) {
+            showImage();
         }
     }
 
+    /**
+     * Shows statistics in an alert dialog
+     */
     @FXML
-    private ListView<HBox> lista;
+    private void showStatistics() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Statistiche Pressioni");
+        alert.setHeaderText("Informazioni sulle pressioni dei tasti");
 
-    public void initialize() {
-        for (int i = 1; i <= 5; i++) {
-            Button b = new Button("Pulsante " + i);
-            b.setOnAction(e -> System.out.println("Hai cliccato: " + b.getText()));
+        String content = String.format(
+            "Numero totale di pressioni: %d%n%nPrima pressione: %s%n%nUltima pressione: %s",
+            model.getTotalEvents(),
+            model.getFirstEventFormatted().isEmpty() ? "Nessuna" : model.getFirstEventFormatted(),
+            model.getLastEventFormatted().isEmpty() ? "Nessuna" : model.getLastEventFormatted()
+        );
 
-            HBox box = new HBox(10);
-            box.getChildren().add(b);
+        alert.setContentText(content);
+        alert.showAndWait();
+    }
 
-            lista.getItems().add(box);
+    /**
+     * Clears the event list
+     */
+    @FXML
+    private void clearList() {
+        model.clearEvents();
+        eventList.getItems().clear();
+        
+        // Hide image when list is cleared
+        hideImage();
+    }
+
+    /**
+     * Hides the image
+     */
+    @FXML
+    private void hideImage() {
+        imageView.setVisible(false);
+        imageView.setManaged(false);
+    }
+
+    /**
+     * Shows the image
+     */
+    private void showImage() {
+        if (!imageView.isVisible()) {
+            try {
+                // Try to load the image
+                Image image = new Image(getClass().getResourceAsStream("/img/celebration.png"));
+                imageView.setImage(image);
+                imageView.setVisible(true);
+                imageView.setManaged(true);
+            } catch (Exception e) {
+                System.err.println("Impossibile caricare l'immagine: " + e.getMessage());
+            }
         }
     }
 }

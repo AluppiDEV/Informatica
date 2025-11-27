@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Guerriero.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Guerriero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Inventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Inventario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Mago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Oggetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Oggetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Party.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Party.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Personaggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/Personaggio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/PozioneCurativa.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/PozioneCurativa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/PozioneMana.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/PozioneMana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_un_po_meno_baracca/UML.png" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_un_po_meno_baracca/UML.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Informatica/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Informatica/Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Informatica/Java/RPG_un_po_meno_baracca/RPG_un_po_meno_baracca.png" beforeDir="false" />
-    </list>
+    <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,6 +168,7 @@
       <workItem from="1764157542165" duration="458000" />
       <workItem from="1764158148314" duration="2756000" />
       <workItem from="1764161202746" duration="68000" />
+      <workItem from="1764238831937" duration="21000" />
     </task>
     <servers />
   </component>

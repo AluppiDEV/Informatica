@@ -67,6 +67,10 @@
                             <noManPages>true</noManPages>
                             <stripDebug>true</stripDebug>
                             <noHeaderFiles>true</noHeaderFiles>
+                            <options>
+                                <option>--enable-native-access=javafx.graphics</option>
+                                <option>--add-opens=java.base/sun.misc=ALL-UNNAMED</option>
+                            </options>
                         </configuration>
                     </execution>
                 </executions>
