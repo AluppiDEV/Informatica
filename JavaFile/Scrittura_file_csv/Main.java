@@ -1,4 +1,4 @@
-package Java.Scrittura_file_csv;
+package JavaFile.Scrittura_file_csv;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -9,7 +9,8 @@ import java.io.IOException;
 public class Main {
 
     // nome del package corrente
-    static String pkName = Main.class.getPackage().getName().replace(".", "/");
+    static String pkName = "Scrittura_file_csv";
+    //static String pkName = Main.class.getPackage().getName().replace(".", "/");
 
     public static void main(String[] args) {
         String fName = "studenti.csv";

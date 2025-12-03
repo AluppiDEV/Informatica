@@ -1,4 +1,4 @@
-package Java.Scrittura_file_csv;
+package JavaFile.Scrittura_file_csv;
 
 public class Studente {
 
