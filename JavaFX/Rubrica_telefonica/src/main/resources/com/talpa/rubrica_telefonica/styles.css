@@ -1,0 +1,134 @@
+/* Root Container */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #f0f4f8, #e2e8f0);
+    -fx-min-width: 500px;
+    -fx-min-height: 600px;
+}
+
+/* Header Label */
+.header-label {
+    -fx-text-fill: linear-gradient(to right, #2563eb, #7c3aed);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 2);
+}
+
+/* Section Titles */
+.section-title {
+    -fx-text-fill: #1e293b;
+    -fx-padding: 5 0 5 0;
+}
+
+/* Input Section */
+.input-section {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 15, 0, 0, 3);
+}
+
+/* Text Fields */
+.input-field {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 8;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-padding: 12;
+    -fx-text-fill: #1e293b;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.input-field:focused {
+    -fx-border-color: #3b82f6;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 8, 0, 0, 0);
+}
+
+/* Add Button */
+.add-button {
+    -fx-background-color: linear-gradient(to right, #3b82f6, #2563eb);
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 12 24 12 24;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.4), 10, 0, 0, 4);
+}
+
+.add-button:hover {
+    -fx-background-color: linear-gradient(to right, #2563eb, #1d4ed8);
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.6), 15, 0, 0, 6);
+    -fx-scale-y: 1.02;
+    -fx-scale-x: 1.02;
+}
+
+.add-button:pressed {
+    -fx-background-color: linear-gradient(to right, #1d4ed8, #1e40af);
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 5, 0, 0, 2);
+    -fx-scale-y: 0.98;
+    -fx-scale-x: 0.98;
+}
+
+/* List Section */
+.list-section {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 15, 0, 0, 3);
+}
+
+/* ListView */
+.contacts-list {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 8;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.contacts-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1e293b;
+    -fx-padding: 12 16 12 16;
+    -fx-font-size: 14px;
+    -fx-border-color: transparent transparent #e2e8f0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.contacts-list .list-cell:filled:hover {
+    -fx-background-color: #e0f2fe;
+    -fx-cursor: hand;
+}
+
+.contacts-list .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to right, #dbeafe, #bfdbfe);
+    -fx-text-fill: #1e40af;
+    -fx-font-weight: bold;
+}
+
+.contacts-list .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+/* ScrollBar Styling */
+.contacts-list .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.contacts-list .scroll-bar:vertical .track {
+    -fx-background-color: #f1f5f9;
+    -fx-background-radius: 5;
+}
+
+.contacts-list .scroll-bar:vertical .thumb {
+    -fx-background-color: #cbd5e1;
+    -fx-background-radius: 5;
+}
+
+.contacts-list .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #94a3b8;
+}
+
+.contacts-list .scroll-bar:vertical .increment-button,
+.contacts-list .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}

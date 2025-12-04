@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" spacing="25.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.talpa.rubrica_telefonica.HelloController"
+      styleClass="root" stylesheets="@styles.css">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+
+    <!-- Header -->
+    <Label text="📱 Rubrica Telefonica" styleClass="header-label">
+        <font>
+            <Font name="System Bold" size="32.0"/>
+        </font>
+    </Label>
+
+    <!-- Aggiungi contatto -->
+    <VBox spacing="15.0" styleClass="input-section">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <Label text="Aggiungi Nuovo Contatto" styleClass="section-title">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+
+        <TextField fx:id="nomeField" promptText="Nome del contatto" styleClass="input-field">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+
+        <TextField fx:id="numeroField" promptText="Numero di telefono" styleClass="input-field">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+
+        <Button text="➕ Aggiungi Contatto" onAction="#onAggiungiContattoClick"
+                styleClass="add-button" maxWidth="Infinity">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Button>
+    </VBox>
+
+    <!-- Messaggio di stato per il salvataggio -->
+    <Label fx:id="saveStatusLabel" styleClass="status-message" wrapText="true">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Label>
+
+    <!-- Lista contatti -->
+    <VBox spacing="10.0" VBox.vgrow="ALWAYS" styleClass="list-section">
+        <Label text="I Tuoi Contatti" styleClass="section-title">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+
+        <ListView fx:id="viewListaContatti" styleClass="contacts-list" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </ListView>
+    </VBox>
+
+    <!-- Messaggio di stato per il caricamento dei dati -->
+    <Label fx:id="loadStatusLabel" styleClass="status-message" wrapText="true">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Label>
+
+</VBox>
