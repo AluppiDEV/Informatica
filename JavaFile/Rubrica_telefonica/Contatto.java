@@ -1,13 +1,28 @@
 package JavaFile.Rubrica_telefonica;
 
 public class Contatto {
-
     private String nome;
     private String numero;
 
-    // costruttore completo
     public Contatto(String nome, String numero) {
         this.nome = nome;
+        this.numero = numero;
+    }
+
+    // Getter e setter
+    public String getNome() {
+        return nome;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
@@ -15,5 +30,4 @@ public class Contatto {
     public String toString() {
         return nome + "," + numero;
     }
-
 }

@@ -1,97 +1,94 @@
 package JavaFile.Rubrica_telefonica;
 
-import JavaFile.Scrittura_file_csv.Studente;
-
-import java.util.*;
-import java.io.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
-
-    static String pkName = "Rubrica_telefonica";
-
     public static void main(String[] args) {
-
-        String fName = "rubrica.csv";
-        ArrayList<Contatto> rubrica = new ArrayList<>();
+        Rubrica rubrica = new Rubrica();
+        FileManager fileManager = new FileManager();
         Scanner input = new Scanner(System.in);
 
         while (true) {
+            System.out.println("\n=== MENU RUBRICA ===");
+            System.out.println("1. Aggiungi contatto");
+            System.out.println("2. Carica da file");
+            System.out.println("3. Stampa rubrica");
+            System.out.println("4. Cerca contatto");
+            System.out.println("5. Rimuovi contatto (per nome)");
+            System.out.println("6. Rimuovi contatto (per posizione)");
+            System.out.println("7. Salva su file");
+            System.out.println("8. Esci");
 
-            System.out.println("Seleziona cosa fare \n1. Aggiungi numero \n2. Carica i numeri dalla rubrica \n3. Stampa rubrica \n4. Esci");
-            switch (input.nextInt()) {
+            System.out.print("Scelta: ");
+            int scelta = input.nextInt();
+            input.nextLine(); // Consuma newline
 
-                case 1: {
-                    try (PrintWriter out = new PrintWriter(new FileWriter("./" + pkName + "/" + fName, true))) {
-
-                        System.out.println("Quanti contatti vuoi registrare?");
-                        int n = input.nextInt();
-
-                        for (int i = 0; i < n; i++) {
-                            input.reset();
-                            System.out.println("Inserisci nome del contatto:");
-                            String nome = input.nextLine();
-                            System.out.println("Inserisci numero di telefono:");
-                            String numero = input.nextLine();
-
-                            Contatto c = new Contatto(nome, numero);
-                            rubrica.add(c);
-
-                            out.println(c.toString());
-                        }
-
-                    } catch (IOException e) {
-                        System.err.println("Errore: " + e);
-                    }
+            switch (scelta) {
+                case 1:
+                    System.out.print("Nome: ");
+                    String nome = input.nextLine();
+                    System.out.print("Numero: ");
+                    String numero = input.nextLine();
+                    rubrica.aggiungiContatto(nome, numero);
+                    System.out.println("Contatto aggiunto in memoria!");
                     break;
-                }
 
-                // ---------- PUNTO 2: CARICA DA FILE ----------
-                case 2: {
-                    rubrica.clear();
-
-                    try (Scanner file = new Scanner(new File("./" + pkName + "/" + fName))) {
-
-                        while (file.hasNextLine()) {
-                            String riga = file.nextLine();
-                            String[] campi = riga.split(",");
-
-                            String nome = campi[0];
-                            String numero = campi[1];
-
-                            rubrica.add(new Contatto(nome, numero));
-                        }
-
-                        System.out.println("Contatti caricati.");
-
-                    } catch (IOException e) {
-                        System.err.println("Errore: " + e);
-                    }
+                case 2:
+                    ArrayList<Contatto> contattiCaricati = fileManager.caricaRubrica();
+                    rubrica.setContatti(contattiCaricati);
+                    System.out.println("Caricati " + contattiCaricati.size() + " contatti da file.");
                     break;
-                }
 
-                // ---------- PUNTO 3: STAMPA RUBRICA ----------
-                case 3: {
-                    if (rubrica.isEmpty()) {
-                        System.out.println("Rubrica vuota.");
+                case 3:
+                    System.out.println(rubrica.stampaRubrica());
+                    break;
+
+                case 4:
+                    System.out.print("Nome da cercare: ");
+                    String cerca = input.nextLine();
+                    System.out.println(rubrica.cercaContatto(cerca));
+                    break;
+
+                case 5:
+                    System.out.print("Nome da rimuovere: ");
+                    String nomeRimuovi = input.nextLine();
+                    if (rubrica.rimuoviContatto(nomeRimuovi)) {
+                        System.out.println("Contatto rimosso dalla memoria!");
                     } else {
-                        for (Contatto c : rubrica) {
-                            System.out.println(c);
-                        }
+                        System.out.println("Contatto non trovato.");
                     }
                     break;
-                }
 
-                case 4: {
-                    System.out.println("Arrivederci");
+                case 6:
+                    System.out.println(rubrica.stampaRubrica());
+                    if (!rubrica.isVuota()) {
+                        System.out.print("Posizione da rimuovere (1-" + rubrica.getDimensione() + "): ");
+                        int indice = input.nextInt() - 1;
+                        if (rubrica.rimuoviContatto(indice)) {
+                            System.out.println("Contatto rimosso dalla memoria!");
+                        } else {
+                            System.out.println("Posizione non valida.");
+                        }
+                    }
+                    input.nextLine();
                     break;
-                }
 
-                default: {
-                    System.out.println("\nScelta non valida, riprova\n");
-                }
+                case 7:
+                    if (fileManager.salvaRubrica(rubrica)) {
+                        System.out.println("Rubrica salvata su file con successo!");
+                    } else {
+                        System.out.println("Errore nel salvataggio.");
+                    }
+                    break;
+
+                case 8:
+                    System.out.println("Arrivederci!");
+                    return;
+
+                default:
+                    System.out.println("Scelta non valida!");
             }
-
         }
-
     }
 }
