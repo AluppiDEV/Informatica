@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Stato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/.md" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AereoCargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AereoCargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AereoDiLinea.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AereoDiLinea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AeromobileAMotore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AeromobileAMotore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AeromobileSenzaMotore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AeromobileSenzaMotore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Aliante.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Aliante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Elicottero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Elicottero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Infrastruttura.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Infrastruttura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/JetPrivato.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/JetPrivato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Pista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Stato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Velivolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Velivolo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +66,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Talpa/Documents/GitHub/Informatica/Java",
+    "last_opened_file_path": "C:/Users/VGit/Documents/GitHub/Informatica/Java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,7 +75,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "file.status.colors",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -140,8 +153,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -173,7 +186,13 @@
       <workItem from="1764161202746" duration="68000" />
       <workItem from="1764238831937" duration="21000" />
       <workItem from="1764326866184" duration="1953000" />
-      <workItem from="1764659655807" duration="1316000" />
+      <workItem from="1764659655807" duration="3105000" />
+      <workItem from="1765270148678" duration="576000" />
+      <workItem from="1765354565435" duration="1790000" />
+      <workItem from="1765356432388" duration="34000" />
+      <workItem from="1765356511145" duration="701000" />
+      <workItem from="1765364817141" duration="3540000" />
+      <workItem from="1765382875658" duration="2212000" />
     </task>
     <servers />
   </component>
