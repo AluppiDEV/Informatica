@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaFX/Rubrica_telefonica/src/main/java/com/talpa/rubrica_telefonica/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFX/Rubrica_telefonica/src/main/java/com/talpa/rubrica_telefonica/Segreteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaFX/Rubrica_telefonica/src/main/resources/com/talpa/rubrica_telefonica/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFX/Rubrica_telefonica/src/main/resources/com/talpa/rubrica_telefonica/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Velivolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aereoportuale/Velivolo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -181,6 +179,7 @@
       <workItem from="1765354565435" duration="1790000" />
       <workItem from="1765356432388" duration="34000" />
       <workItem from="1765356511145" duration="701000" />
+      <workItem from="1765364817141" duration="3540000" />
     </task>
     <servers />
   </component>

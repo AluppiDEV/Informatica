@@ -22,7 +22,7 @@ public abstract class Velivolo {
 
     public abstract boolean decolla();
 
-    public void rifornisci() {
+    public void refuel() {
         this.fuel = 100;
     }
 
