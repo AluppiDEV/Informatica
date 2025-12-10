@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 <VBox alignment="TOP_CENTER" spacing="25.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.talpa.rubrica_telefonica.HelloController"
+      fx:controller="com.talpa.rubrica_telefonica.Segreteria"
       styleClass="root" stylesheets="@styles.css">
     <padding>
         <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>

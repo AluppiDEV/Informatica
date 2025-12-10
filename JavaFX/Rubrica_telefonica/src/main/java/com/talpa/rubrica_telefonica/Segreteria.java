@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 import java.io.*;
 import java.util.Scanner;
 
-public class HelloController {
+public class Segreteria {
 
     @FXML
     private TextField nomeField;
