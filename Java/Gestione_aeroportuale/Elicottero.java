@@ -7,7 +7,7 @@ public class Elicottero extends AeromobileAMotore {
 
     @Override
     public boolean atterra(Infrastruttura infrastruttura) {
-        if ((infrastruttura instanceof Pista || infrastruttura instanceof PiazzolaSosta) && !infrastruttura.isOccupato()) {
+        if ((infrastruttura instanceof PiazzolaSosta || infrastruttura instanceof Pista) && !infrastruttura.isOccupato()) {
             infrastruttura.occupa(this);
             this.inVolo = false;
             return true;
