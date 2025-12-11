@@ -52,7 +52,7 @@
     </VBox>
 
     <!-- Messaggio di stato per il salvataggio -->
-    <Label fx:id="saveStatusLabel" styleClass="status-message" wrapText="true">
+    <Label fx:id="statoSalvataggio" styleClass="status-message" wrapText="true">
         <font>
             <Font size="12.0"/>
         </font>
@@ -74,7 +74,7 @@
     </VBox>
 
     <!-- Messaggio di stato per il caricamento dei dati -->
-    <Label fx:id="loadStatusLabel" styleClass="status-message" wrapText="true">
+    <Label fx:id="statoCaricamento" styleClass="status-message" wrapText="true">
         <font>
             <Font size="12.0"/>
         </font>

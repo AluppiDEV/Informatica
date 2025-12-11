@@ -60,7 +60,7 @@ public class Aeroporto {
         output.append("> Voli in arrivo: ").append(voliInArrivo.size())
                 .append(" | Piste Libere: ").append(pisteLibere).append("\n");
 
-        output.append(gestisciAterraggi(meteo));
+        output.append(gestisciAtterraggi(meteo));
         output.append(gestisciManutenzioni());
         output.append(gestisciDecolli(meteo));
 
@@ -69,7 +69,7 @@ public class Aeroporto {
         return output.toString();
     }
 
-    private String gestisciAterraggi(CondMeteo meteo) {
+    private String gestisciAtterraggi(CondMeteo meteo) {
         StringBuilder output = new StringBuilder();
 
         if (meteo == CondMeteo.NEBBIA) {

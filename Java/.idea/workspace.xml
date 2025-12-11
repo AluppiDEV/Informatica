@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aeroportuale/Elicottero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Elicottero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestione_aeroportuale/Aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Aeroporto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,8 +143,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
       </set>
     </attachedChunks>
   </component>
@@ -184,6 +184,7 @@
       <workItem from="1765364817141" duration="3540000" />
       <workItem from="1765382875658" duration="4598000" />
       <workItem from="1765403391098" duration="1661000" />
+      <workItem from="1765448600651" duration="957000" />
     </task>
     <servers />
   </component>

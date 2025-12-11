@@ -23,10 +23,10 @@ public class Segreteria {
     private ListView<String> viewListaContatti;
 
     @FXML
-    private Label saveStatusLabel;
+    private Label statoSalvataggio;
 
     @FXML
-    private Label loadStatusLabel;
+    private Label statoCaricamento;
 
     // ObservableList to hold contacts for the ListView
     private ObservableList<String> rubrica;
@@ -80,13 +80,13 @@ public class Segreteria {
         try (PrintWriter pw = new PrintWriter(new FileWriter(FILE_NAME, true))) {
             // Salva solo l'ultimo contatto aggiunto
             pw.println(rubrica.getLast());
-            saveStatusLabel.setText("✓ Salvataggio riuscito");
+            statoSalvataggio.setText("✓ Salvataggio riuscito");
             return true;
         } catch (IOException e) {
             printAlert(Alert.AlertType.ERROR, "Scrittura file", 
                       "Errore durante la scrittura del file", 
                       "Impossibile salvare il contatto: " + e.getMessage());
-            saveStatusLabel.setText("✗ Salvataggio non riuscito");
+            statoSalvataggio.setText("✗ Salvataggio non riuscito");
             return false;
         }
     }
@@ -100,7 +100,7 @@ public class Segreteria {
         
         // Se il file non esiste, non fare nulla (è la prima esecuzione)
         if (!file.exists()) {
-            loadStatusLabel.setText("Nessun file da caricare");
+            statoCaricamento.setText("Nessun file da caricare");
             return;
         }
         
@@ -140,14 +140,14 @@ public class Segreteria {
             }
             
             if (righeIgnorate > 0) {
-                loadStatusLabel.setText(String.format("✓ %d contatti caricati (%d righe ignorate)", 
+                statoCaricamento.setText(String.format("✓ %d contatti caricati (%d righe ignorate)",
                                                      contattiCaricati, righeIgnorate));
             } else {
-                loadStatusLabel.setText(String.format("✓ %d contatti caricati", contattiCaricati));
+                statoCaricamento.setText(String.format("✓ %d contatti caricati", contattiCaricati));
             }
             
         } catch (IOException e) {
-            loadStatusLabel.setText("✗ Errore caricamento: " + e.getMessage());
+            statoCaricamento.setText("✗ Errore caricamento: " + e.getMessage());
             printAlert(Alert.AlertType.ERROR, "Lettura file", 
                       "Errore durante la lettura del file", 
                       "Impossibile caricare i contatti: " + e.getMessage());
