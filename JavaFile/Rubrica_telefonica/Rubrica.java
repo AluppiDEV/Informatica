@@ -1,8 +1,9 @@
 package JavaFile.Rubrica_telefonica;
 
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class Rubrica {
+public class Rubrica implements Serializable{
     private ArrayList<Contatto> contatti;
 
     public Rubrica() {

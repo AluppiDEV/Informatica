@@ -1,10 +1,12 @@
 package JavaFile.Rubrica_telefonica;
 
-public class Contatto {
+import java.io.Serializable;
+
+public class Contatto implements Serializable {
     private String nome;
     private String numero;
 
-    public Contatto(String nome, String numero) {
+    public Contatto(String nome, String numero)  {
         this.nome = nome;
         this.numero = numero;
     }
