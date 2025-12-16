@@ -1,3 +1,5 @@
+package JavaFile.Gestione_magazzino;
+
 public class TechGadget extends Articolo{
     private boolean batteriaInclusa;
     private String marca;

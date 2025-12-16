@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c95189-bb4d-4713-a75e-24e1bc0630e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Stato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/.md" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AereoCargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AereoCargo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AereoDiLinea.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AereoDiLinea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AeromobileAMotore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AeromobileAMotore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/AeromobileSenzaMotore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/AeromobileSenzaMotore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Aliante.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Aliante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Elicottero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Elicottero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Infrastruttura.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Infrastruttura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/JetPrivato.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/JetPrivato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Pista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Stato.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestione_aereoportuale/Velivolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_aeroportuale/Velivolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/Articolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/Articolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/GestoreLogistica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/GestoreLogistica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/ProdottoFresco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/ProdottoFresco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/TechGadget.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFile/Gestione_magazzino/TechGadget.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +45,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Java.FileWriter.Main.executor": "Run",
+    "Application.Java.Gestione_aeroportuale.Main.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Party.executor": "Run",
+    "Application.Test.executor": "Run",
     "Application.TestDomotica.executor": "Run",
     "Application.TestZoo.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -66,7 +60,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/VGit/Documents/GitHub/Informatica/Java",
+    "last_opened_file_path": "C:/Users/VGit/Documents/GitHub/Informatica/Java/Html_parser",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,6 +76,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VGit\Documents\GitHub\Informatica\Java\Html_parser" />
       <recent name="C:\Users\VGit\Documents\GitHub\Informatica\Java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -153,8 +148,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28539.13" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28539.13" />
       </set>
     </attachedChunks>
   </component>
@@ -192,7 +187,10 @@
       <workItem from="1765356432388" duration="34000" />
       <workItem from="1765356511145" duration="701000" />
       <workItem from="1765364817141" duration="3540000" />
-      <workItem from="1765382875658" duration="2212000" />
+      <workItem from="1765382875658" duration="4598000" />
+      <workItem from="1765403391098" duration="1661000" />
+      <workItem from="1765448600651" duration="957000" />
+      <workItem from="1765872178615" duration="1924000" />
     </task>
     <servers />
   </component>

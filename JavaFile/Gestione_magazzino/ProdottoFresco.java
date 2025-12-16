@@ -1,3 +1,5 @@
+package JavaFile.Gestione_magazzino;
+
 public class ProdottoFresco extends Articolo{
     private double temperaturaConservazione;
     private String dataScadenza;

@@ -1,3 +1,5 @@
+package JavaFile.Gestione_magazzino;
+
 import java.io.*;
 import java.util.ArrayList;
 

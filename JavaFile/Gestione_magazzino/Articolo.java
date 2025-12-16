@@ -1,3 +1,5 @@
+package JavaFile.Gestione_magazzino;
+
 import java.io.Serializable;
 
 public abstract class Articolo implements Serializable {
