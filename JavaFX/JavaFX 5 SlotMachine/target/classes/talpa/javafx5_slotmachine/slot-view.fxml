@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="talpa.javafx5_slotmachine.SlotController"
+      spacing="14.0" alignment="TOP_CENTER">
+
+    <padding>
+        <Insets top="14.0" right="14.0" bottom="14.0" left="14.0"/>
+    </padding>
+
+    <HBox spacing="18.0" alignment="CENTER">
+        <HBox spacing="12.0" alignment="CENTER">
+            <ImageView fx:id="iv1" fitWidth="120.0" fitHeight="120.0" preserveRatio="true">
+                <Image url="@img/arancio.jpg"/>
+            </ImageView>
+            <ImageView fx:id="iv2" fitWidth="120.0" fitHeight="120.0" preserveRatio="true">
+                <Image url="@img/banane.jpg"/>
+            </ImageView>
+            <ImageView fx:id="iv3" fitWidth="120.0" fitHeight="120.0" preserveRatio="true">
+                <Image url="@img/ciliegie.jpg"/>
+            </ImageView>
+        </HBox>
+
+        <Slider fx:id="sldSpin"
+                min="0.0" max="100.0" value="100.0"
+                orientation="VERTICAL"
+                prefHeight="170.0"
+                showTickMarks="false"
+                showTickLabels="false"
+                onMouseReleased="#onSpinSliderReleased"/>
+    </HBox>
+
+    <Label fx:id="lblEsito" text="Esito: -" />
+
+    <Label fx:id="lblSaldo" text="Saldo: " />
+</VBox>

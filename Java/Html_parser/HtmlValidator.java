@@ -32,7 +32,6 @@ public class HtmlValidator {
      * @return true se tutti i tag sono bilanciati e correttamente annidati, false altrimenti
      */
     public static boolean isValid(String input) {
-        // Pulisce lo Stack per iniziare una nuova validazione
         inputTag.clear();
 
         /*
@@ -66,40 +65,24 @@ public class HtmlValidator {
              */
             String tag = matcher.group();
 
-            // Verifica se è un tag di chiusura (inizia con "</")
             if (tag.startsWith("</")) {
-                // Se non ci sono tag aperti nello Stack, è un errore
                 if (inputTag.isEmpty()) {
                     return false;
                 }
 
-                // Preleva l'ultimo tag di apertura dallo Stack
                 String last = inputTag.pop();
 
-                /*
-                 * Estrae il nome del tag rimuovendo i caratteri speciali:
-                 * - lastType rimuove '<' e '>' dal tag di apertura
-                 *   es. "<div>" diventa "div"
-                 * - currentType rimuove '</', '>' dal tag di chiusura
-                 *   es. "</div>" diventa "div"
-                 */
                 String lastType = last.substring(1, last.length() - 1);
                 String currentType = tag.substring(2, tag.length() - 1);
 
-                // Verifica che i nomi dei tag corrispondano
                 if (!lastType.equals(currentType)) {
                     return false;
                 }
             } else if (tag.startsWith("<")) {
-                // È un tag di apertura, lo aggiunge allo Stack
                 inputTag.push(tag);
             }
         }
 
-        /*
-         * Dopo aver processato tutti i tag, lo Stack deve essere vuoto.
-         * Se contiene ancora elementi, significa che ci sono tag aperti non chiusi.
-         */
         return inputTag.isEmpty();
     }
 }
